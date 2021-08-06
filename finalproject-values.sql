@@ -48,7 +48,7 @@ INSERT INTO locations (city, state) VALUES
 
 INSERT INTO hobbies (sports, foodie, running, travel, movies, reading, 
 fashion, videogames, dancing, cycling, music, swimming, hiking, excercising,
-concert, art, cooking, singing, baking, animals, camping, boardgames, crafts) VALUES
+concerts, art, cooking, singing, baking, animals, camping, boardgames, crafts) VALUES
 (true, false, true, false, true, false, false, true, false, false, true, false, false, true, true, false, false, false, false, true, true, false, false),
 (false, true, false, true, true, true, true, false, false, false, true, false, false, false, false, true, true, false, true, true, false, false, true),
 (false, false, false, true, true, false, true, true, true, false, true, false, false, true, true, true, false, false, false, false, false, false, true),
@@ -64,7 +64,7 @@ concert, art, cooking, singing, baking, animals, camping, boardgames, crafts) VA
 (false, true, false, true, true, true, true, false, false, false, true, false, false, true, true, true, false, false, true, false, true, true, false),
 (false, true, false, true, true, true, false, false, false, false, true, true, false, true, true, false, true, false, false, false, false, true, false),
 (false, true, false, true, true, true, true, false, true, false, true, false, false, false, true, true, false, true, false, true, false, true, false),
-(false, false, false, false, true, true, false, true, false, false, true, false, false, false);
+(false, false, false, false, true, true, false, true, false, false, true, false, false, false, false, false, true, true, false, true, false, false, true);
 
 INSERT INTO sensorytags (hypersight, hypersound, hypersmell, hypertaste, hypertouch, hyposight, hyposound,
 hyposmell, hypotaste, hypotouch, balance, bodyawareness) VALUES

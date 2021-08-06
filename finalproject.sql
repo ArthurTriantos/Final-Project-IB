@@ -17,16 +17,14 @@ create table descriptions (
     orientation varchar(100) not null,
     ethnicity varchar(50) not null,
     height varchar(50) not null,
-    _created datetime default current_timestamp,
-    foreign key (authorid) references authors(id)
+    _created datetime default current_timestamp
 );
 
 create table locations (
 	id int not null auto_increment primary key,
     city varchar(100) not null,
     state varchar(100) not null,
-    _created datetime default current_timestamp,
-    foreign key (authorid) references authors(id)
+    _created datetime default current_timestamp
 );
 
 create table hobbies (
@@ -54,8 +52,7 @@ create table hobbies (
     camping bool not null,
     boardgames bool not null,
     crafts bool not null,
-    _created datetime default current_timestamp,
-    foreign key (authorid) references authors(id)
+    _created datetime default current_timestamp
 );
 
 create table sensorytags (
@@ -72,8 +69,7 @@ create table sensorytags (
     hypotouch bool not null,
     balance bool not null,
     bodyawareness bool not null,
-    _created datetime default current_timestamp,
-    foreign key (authorid) references authors(id)
+    _created datetime default current_timestamp
 );
 
 create table profileinfo (
@@ -102,7 +98,7 @@ create table activities (
     address varchar(200) not null,
     link varchar(200) not null,
     picture varchar(300) not null,
-    hours varchar(100) not null,
+    hours varchar(200) not null,
     cost int not null,
     _created datetime default current_timestamp
 );
@@ -114,7 +110,7 @@ create table questions (
 
 create table matches (
 	firstuserid int not null,
-    secconduserid int not null,
+    seconduserid int not null,
     primary key (firstuserid, seconduserid),
     foreign key (firstuserid) references users(id),
     foreign key (seconduserid) references users(id)
@@ -122,7 +118,7 @@ create table matches (
 
 create table blocks (
 	firstuserid int not null,
-    secconduserid int not null,
+    seconduserid int not null,
     primary key (firstuserid, seconduserid),
     foreign key (firstuserid) references users(id),
     foreign key (seconduserid) references users(id)
