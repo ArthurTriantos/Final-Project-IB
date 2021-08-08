@@ -44,6 +44,14 @@ INSERT INTO locations (city, state) VALUES
 ("Pelham","Alabama"),
 ("Alabaster","Alabama"),
 ("Vestavia Hills","Alabama"),
+("Hoover","Alabama"),
+("Birmingham","Alabama"),
+("Hoover","Alabama"),
+("Trussville","Alabama"),
+("Bessemer","Alabama"),
+("Pelham","Alabama"),
+("Alabaster","Alabama"),
+("Vestavia Hills","Alabama"),
 ("Hoover","Alabama");
 
 INSERT INTO hobbies (sports, foodie, running, travel, movies, reading, 
@@ -85,7 +93,7 @@ hyposmell, hypotaste, hypotouch, balance, bodyawareness) VALUES
 (false, false, true, true, false, false, false, false, false, false, true, false),
 (false, false, false, false, true, false, false, true, false, false, false, true);
 
-INSERT INTO profileinfo (userid, firstname, bio, spectrum, relationship, descriptionid, locationid, hobbyid, sensoryid) VALUES
+INSERT INTO profileinfo (userid, firstname, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid) VALUES
 (1, "Joe", "Hi! I'm Joe.  I like football.", "Autistic", "Friendship", 1, 1, 1, 1),
 (2, "Jane", "Hi! I'm Jane.  Let's hangout.", "Person with Autism", "Relationship", 2, 2, 2, 2),
 (3, "Tanner", "No Pic, No Chat", "On the Spectrum", "Relationship", 3, 3, 3, 3),
@@ -94,14 +102,14 @@ INSERT INTO profileinfo (userid, firstname, bio, spectrum, relationship, descrip
 (6, "Hannah", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Person with Autism", "Relationship", 6, 6, 6, 6),
 (7, "Clark", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 7, 7, 7, 7),
 (8, "Emily", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic Person", "Relationship", 8, 8, 8, 8),
-(9, "Sean", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 9, 1, 9, 9),
-(10, "Lizzie", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "On the Spectrum", "Relationship", 10, 1, 10, 10),
-(11, "Sky", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "ASD", "Other", 11, 2, 11, 11),
-(12, "Kylar", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Relationship", 12, 2, 12, 12),
-(13, "Flo", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Austistic", "Relationship", 13, 4, 13, 13),
-(14, "Taylor", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Other", 14, 4, 14, 14),
-(15, "West", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Person with Autism", "Relationship", 15, 6, 15, 15),
-(16, "Sam", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 16, 8, 16, 16);
+(9, "Sean", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 9, 9, 9, 9),
+(10, "Lizzie", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "On the Spectrum", "Relationship", 10, 10, 10, 10),
+(11, "Sky", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "ASD", "Other", 11, 11, 11, 11),
+(12, "Kylar", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Relationship", 12, 12, 12, 12),
+(13, "Flo", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Austistic", "Relationship", 13, 13, 13, 13),
+(14, "Taylor", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Other", 14, 14, 14, 14),
+(15, "West", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Person with Autism", "Relationship", 15, 15, 15, 15),
+(16, "Sam", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 16, 16, 16, 16);
 
 INSERT INTO activities (name, about, address, link, picture, hours, cost) VALUES
 ("Birmingham Zoo","A wildlife zoo containing lions, zebras, rhinos, giraffes, and many more animals", "2630 Cahaba Road, Birmingham, AL 35223", "https://www.birminghamzoo.com", "https://www.birminghamzoo.com/wp-content/themes/birminghamzoo.com/style/images/logo.svg", "Wednesday - Sunday: 9:00AM - 5:00PM", 2),
