@@ -51,8 +51,7 @@ create table hobbies (
     animals bool not null,
     camping bool not null,
     boardgames bool not null,
-    crafts bool not null,
-    _created datetime default current_timestamp
+    crafts bool not null
 );
 
 create table sensorytags (
@@ -68,8 +67,7 @@ create table sensorytags (
     hypotaste bool not null,
     hypotouch bool not null,
     balance bool not null,
-    bodyawareness bool not null,
-    _created datetime default current_timestamp
+    bodyawareness bool not null
 );
 
 create table profileinfo (
@@ -81,13 +79,13 @@ create table profileinfo (
     relationship varchar(50) not null,
     descriptionid int not null,
     locationid int not null,
-    hobbyid int not null,
+    hobbiesid int not null,
     sensoryid int not null,
     _created datetime default current_timestamp,
     foreign key (userid) references users(id),
     foreign key (descriptionid) references descriptions(id),
     foreign key (locationid) references locations(id),
-    foreign key (hobbyid) references hobbies(id),
+    foreign key (hobbiesid) references hobbies(id),
     foreign key (sensoryid) references sensorytags(id)
 );
 

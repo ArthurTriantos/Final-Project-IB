@@ -1,9 +1,8 @@
 import * as express from 'express';
+import profileinfoRouter from './profileinfo';
 
 const router = express.Router();
 
-router.get('/hello', (req, res, next) => {
-    res.json('World');
-});
+router.use('/profileinfo', profileinfoRouter)
 
 export default router;
