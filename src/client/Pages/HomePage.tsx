@@ -74,7 +74,7 @@ const HomePage = () => {
               src="https://www.business.com/images/content/5dc/b51ec5a215e357b8b4572/1500-0-"
               alt="Card image cap"
             />
-            <div className="card-body text-center d-flex flex-wrap justify-content-evenly ">
+            <div className="card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
               <h5 className="home-card-title">How It Works</h5>
               <p className="card-text d-flex align-items-center">
                 Simply create your new profile and watch the magic unfold! Each
@@ -92,7 +92,7 @@ const HomePage = () => {
               src="https://thumbs.dreamstime.com/b/happy-friendly-people-keeping-hands-near-heart-collage-positive-young-casual-clothes-smiling-expressing-love-211447642.jpg"
               alt="Card image cap"
             />
-            <div className="card-body text-center d-flex flex-wrap justify-content-evenly ">
+            <div className="card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
               <h5 className="home-card-title">Not Just A Dating Site</h5>
               <p className="card-text d-flex align-items-center">
                 iNDie isnt just another dating site, its a kinship site! Kinship
@@ -108,13 +108,12 @@ const HomePage = () => {
 
         <div className="container">
           <footer className="py-3 my-4">
-            <ul className="nav justify-content-center  pb-3 mb-3 footer-stuff">
+            <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
               {footer.map((footer, index) => (
-                <PageFooter footer={footer} key = {index} />
+                <PageFooter footer={footer} key={index} />
               ))}
             </ul>
-            <p className="text-center
-            ">© 2021 iNDie Connect, Inc</p>
+            <p className="text-center">© 2021 iNDie Connect, Inc</p>
           </footer>
         </div>
       </div>

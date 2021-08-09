@@ -4,7 +4,7 @@ const PageFooter = (props: { footer: string }) => {
   return (
     
         <li className="nav-item">
-          <a href="#" className="nav-link px-2">
+          <a href="#" className="nav footer-nav">
             {props.footer}
           </a>
         </li>

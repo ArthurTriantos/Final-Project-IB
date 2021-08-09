@@ -289,7 +289,7 @@ const ProfileEdit = () => {
               </h5>
               <div className="checkbox-container row">
                 {interests.map((interest, index) => (
-                  <InterestCheck interest={interest} key = {index} />
+                  <InterestCheck interest={interest} key={index} />
                 ))}
               </div>
 
@@ -322,14 +322,12 @@ const ProfileEdit = () => {
 
               <div className="container">
                 <footer className="py-3 my-4">
-                  <ul className="nav justify-content-center  pb-3 mb-3">
+                  <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
                     {footer.map((footer, index) => (
-                      <PageFooter footer={footer} key = {index} />
+                      <PageFooter footer={footer} key={index} />
                     ))}
                   </ul>
-                  <p className="text-center text-muted">
-                    © 2021 iNDie Connect, Inc
-                  </p>
+                  <p className="text-center">© 2021 iNDie Connect, Inc</p>
                 </footer>
               </div>
             </form>

@@ -53,7 +53,7 @@ const Profile = () => {
             <form>
               <div className="form-row">
                 {basicInfo.map((basicInfo, index) => (
-                  <BasicInfo basicInfo={basicInfo} key = {index} />
+                  <BasicInfo basicInfo={basicInfo} key={index} />
                 ))}
               </div>
 
@@ -79,14 +79,12 @@ const Profile = () => {
 
               <div className="container">
                 <footer className="py-3 my-4">
-                  <ul className="nav justify-content-center pb-3 mb-3">
+                  <ul className="nav footer-nav justify-content-center pb-3 mb-3">
                     {footer.map((footer, index) => (
-                      <PageFooter footer={footer} key = {index} />
+                      <PageFooter footer={footer} key={index} />
                     ))}
                   </ul>
-                  <p className="text-center text-muted">
-                    © 2021 iNDie Connect, Inc
-                  </p>
+                  <p className="text-center">© 2021 iNDie Connect, Inc</p>
                 </footer>
               </div>
             </form>
