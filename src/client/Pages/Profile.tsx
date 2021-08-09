@@ -52,8 +52,8 @@ const Profile = () => {
           <div className="form-container">
             <form>
               <div className="form-row">
-                {basicInfo.map((basicInfo) => (
-                  <BasicInfo basicInfo={basicInfo} />
+                {basicInfo.map((basicInfo, index) => (
+                  <BasicInfo basicInfo={basicInfo} key = {index} />
                 ))}
               </div>
 
@@ -80,8 +80,8 @@ const Profile = () => {
               <div className="container">
                 <footer className="py-3 my-4">
                   <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-                    {footer.map((footer) => (
-                      <PageFooter footer={footer} />
+                    {footer.map((footer, index) => (
+                      <PageFooter footer={footer} key = {index} />
                     ))}
                   </ul>
                   <p className="text-center text-muted">
