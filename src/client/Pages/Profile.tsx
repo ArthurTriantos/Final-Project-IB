@@ -24,7 +24,7 @@ const Profile = () => {
 
   return (
     <>
-      <main className="main-profile-container">
+      <main className="main-profile-container d-flex justify-content-center">
         <div className="main-profile-div">
           {/* profile picture */}
 
@@ -79,7 +79,7 @@ const Profile = () => {
 
               <div className="container">
                 <footer className="py-3 my-4">
-                  <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+                  <ul className="nav justify-content-center pb-3 mb-3">
                     {footer.map((footer, index) => (
                       <PageFooter footer={footer} key = {index} />
                     ))}

@@ -16,10 +16,10 @@ const HomePage = () => {
         <section className="d-flex">
           {/* Jumbotron */}
 
-          <div className="jumbotron col-12 d-flex justify-content-around">
+          <div className="home-jumbotron col-12 d-flex justify-content-around mt-5 mb-5">
             <div className="text-container">
-              <h1 className="display-4">iNDie Connect</h1>
-              <p className="lead">
+              <h1 className="home-jumbo display-3">iNDie Connect</h1>
+              <p className="home-lead">
                 At iNDie Connect we help YOU create long lasting connections
                 with like-minded individuals.<br></br>iNDie is the kinship site
                 for independent Neurodiverse people.
@@ -58,8 +58,8 @@ const HomePage = () => {
               src="https://media.istockphoto.com/photos/gay-men-couple-at-home-picture-id1174871767?k=6&m=1174871767&s=612x612&w=0&h=FmTQwXedQo8VrcGHu3aR8x0iLn70dUqyLjLqRVZTCj4="
               alt="Card image cap"
             />
-            <div className="card-body text-center d-flex flex-wrap justify-content-evenly ">
-              <h5 className="title">About iNDie</h5>
+            <div className="card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
+              <h5 className="home-card-title">About iNDie</h5>
               <p className="card-text d-flex align-items-center">
                 iNDie Connect was designed to help make the process of building
                 meaningful connections easier for Neurodiverse people. Discover
@@ -75,7 +75,7 @@ const HomePage = () => {
               alt="Card image cap"
             />
             <div className="card-body text-center d-flex flex-wrap justify-content-evenly ">
-              <h5 className="title">How It Works</h5>
+              <h5 className="home-card-title">How It Works</h5>
               <p className="card-text d-flex align-items-center">
                 Simply create your new profile and watch the magic unfold! Each
                 user can fill out an in-depth bio so that you can find your
@@ -93,7 +93,7 @@ const HomePage = () => {
               alt="Card image cap"
             />
             <div className="card-body text-center d-flex flex-wrap justify-content-evenly ">
-              <h5 className="title">Not Just A Dating Site</h5>
+              <h5 className="home-card-title">Not Just A Dating Site</h5>
               <p className="card-text d-flex align-items-center">
                 iNDie isnt just another dating site, its a kinship site! Kinship
                 is defined as a sharing of characteristics or orgins, which is
@@ -108,7 +108,7 @@ const HomePage = () => {
 
         <div className="container">
           <footer className="py-3 my-4">
-            <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+            <ul className="nav justify-content-center  pb-3 mb-3 footer-stuff">
               {footer.map((footer, index) => (
                 <PageFooter footer={footer} key = {index} />
               ))}
