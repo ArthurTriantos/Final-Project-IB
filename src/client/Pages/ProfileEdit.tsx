@@ -40,11 +40,11 @@ const ProfileEdit = () => {
 
   return (
     <>
-      <main className="main-edit-container">
-        <div className="main-edit-div col-10">
+      <main className="main-edit-container d-flex justify-content-center">
+        <div className="main-edit-div col-10 mt-5">
           {/* Jumbotron */}
 
-          <div className="jumbotron jumbotron-fluid">
+          <div className="edit-jumbotron jumbotron-fluid">
             <div className="container">
               <h1 className="display-4 text-center">Create/Edit Profile</h1>
               <p className="lead text-center">
@@ -58,7 +58,7 @@ const ProfileEdit = () => {
 
           <div className="picture-card h-25 w-25">
             <img
-              className="card-img-top mb-4"
+              className="card-img-top edit-picture"
               src="https://i.pinimg.com/236x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975--photo-icon-sad.jpg"
               alt="Card image cap"
             />
@@ -213,9 +213,9 @@ const ProfileEdit = () => {
 
               {/* drop-down multi select */}
 
-              <div className="menu-group row">
+              <div className="menu-group row mt-3 d-flex justify-content-between edit-selectors">
                 <div>
-                  <select className="custom-select col-12">
+                  <select className="edit-select custom-select col-12">
                     <option>Select Your Gender</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
@@ -229,7 +229,7 @@ const ProfileEdit = () => {
                   </select>
                 </div>
                 <div>
-                  <select className="custom-select col-12">
+                  <select className="edit-select custom-select col-12">
                     <option>Select Your Sexual Orientation</option>
                     <option value="1">Straight</option>
                     <option value="2">Gay</option>
@@ -244,7 +244,7 @@ const ProfileEdit = () => {
                   </select>
                 </div>
                 <div>
-                  <select className="custom-select col-12">
+                  <select className="edit-select custom-select col-12">
                     <option>Seeking Gender</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
@@ -258,7 +258,7 @@ const ProfileEdit = () => {
                   </select>
                 </div>
                 <div>
-                  <select className="custom-select col-12">
+                  <select className="edit-select custom-select col-12">
                     <option>Seeking Sexual Orientation</option>
                     <option value="1">Straight</option>
                     <option value="2">Gay</option>
@@ -273,7 +273,7 @@ const ProfileEdit = () => {
                   </select>
                 </div>
                 <div>
-                  <select className="custom-select col-12">
+                  <select className="edit-select custom-select col-12">
                     <option>Seeking Relationship Type</option>
                     <option value="1">Friendship</option>
                     <option value="2">Relationship</option>
@@ -288,8 +288,8 @@ const ProfileEdit = () => {
                 Interests (select all that apply)
               </h5>
               <div className="checkbox-container row">
-                {interests.map((interest) => (
-                  <InterestCheck interest={interest} />
+                {interests.map((interest, index) => (
+                  <InterestCheck interest={interest} key={index} />
                 ))}
               </div>
 
@@ -322,14 +322,12 @@ const ProfileEdit = () => {
 
               <div className="container">
                 <footer className="py-3 my-4">
-                  <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-                    {footer.map((footer) => (
-                      <PageFooter footer={footer} />
+                  <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
+                    {footer.map((footer, index) => (
+                      <PageFooter footer={footer} key={index} />
                     ))}
                   </ul>
-                  <p className="text-center text-muted">
-                    © 2021 iNDie Connect, Inc
-                  </p>
+                  <p className="text-center">© 2021 iNDie Connect, Inc</p>
                 </footer>
               </div>
             </form>

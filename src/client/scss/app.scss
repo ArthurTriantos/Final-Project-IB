@@ -1,6 +1,90 @@
 $theme-colors: (
   "primary": #0091ea //Covalence Blue!  :D,,,
-);
+  );
+  
+  // Universal
+  
+  .footer-nav {
+    color: black;
+    border-bottom: 1px solid black !important;
+    margin-left: 3rem;
+  }
+
+  
+  // Home Page
+  
+  .main-home-container {
+    background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  }
+  
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.75rem !important;
+    line-height: 1.5;
+    border-radius: 2rem !important;
+    border: 1px solid !important;
+    font-weight: bold !important;
+  }
+  
+  .home-lead {
+    font-size: larger;
+  }
+
+  .home-card-title {
+    text-align: center !important;
+  }
+  
+  // Edit Profile Page
+  
+  .checkbox-container {
+    margin-top: 1rem;
+  }
+  
+  .main-edit-container {
+    background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+    background-size: cover;
+  }
+  
+  .picture-card {
+    border: solid 1px;
+    height: auto;
+    width: 400px;
+    height: 400px;
+  };
+
+  .edit-picture {
+    // object-fit: cover;
+    height: 100%;
+    width: auto;
+  }
+
+  .edit-selectors > div {
+    width: 15%;
+ 
+  }
+  // Profile Page
+  
+  .profile-picture {
+    border: solid 1px;
+    padding: 1rem;
+  }
+  
+  
+  .main-profile-container {
+    background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+    background-size: cover;
+    padding: auto;
+
+  }
+  
+  // .main-profile-div {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-content: center !important;
+  // }
+
+
+// Unknown/ need placement
 
 .card-body {
   flex: 1 1 auto;
@@ -8,9 +92,6 @@ $theme-colors: (
   padding: 1rem !important;
 }
 
-.picture-card {
-  border: solid 1px;
-}
 
 .custom-select {
   flex-direction: row !important;
@@ -20,37 +101,12 @@ $theme-colors: (
   padding: 0rem;
 }
 
-.checkbox-container {
-  margin-top: 1rem;
-}
-
-.profile-picture {
-  border: solid 1px;
-  padding: 1rem;
-}
-
-.main-home-container {
-  background-image: url("https://www.fabricsandpapers.com/media/catalog/product/cache/8e913007d823849ca8c454db652f6c37/d/o/download.png");
-}
-
-.main-profile-container {
-  background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2017/04/blue/16903216-1-eng-GB/Blue_pillars.jpg");
-}
-
-.nav-link {
-  color: black;
-}
 
 
-// .main-edit-container {
-//   background-image: url("https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2017/04/blue/16903216-1-eng-GB/Blue_pillars.jpg");
-// }
 
-// .main-profile-div {
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-content: center !important;
-// }
+
+
+
 
 // Kyran CSS
 .body{
