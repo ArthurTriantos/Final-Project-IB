@@ -6,13 +6,13 @@ import ProfileCard from '../components/ProfileCard'
 const Hub: React.FC<IHub> = () => {
     const [profiles, setProfiles] = useState<ProfileState[]>([]);
     
-    const getChirps = async () => {
+    const getProfiles = async () => {
         let r = await fetch('/api/profileinfo');
         let profile = await r.json();
         setProfiles(profile);
     }
     
-    useEffect(() => {getChirps();}, [])
+    useEffect(() => {getProfiles();}, [])
     
     return (
         <div>
