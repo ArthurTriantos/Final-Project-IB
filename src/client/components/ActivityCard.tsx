@@ -19,16 +19,20 @@ const Activity = ({ activity }: {activity: any}) => {
 
     return (
         <>
-            <div className="activity">
-                <img src={activity.picture}
-                    alt="logo" width="75px" height="75px"/>
-                <h3>{activity.name}</h3>
-                <h4>About: {activity.about}</h4>
-                <h6>Address: {activity.address}</h6>
-                <h6>Hours: {activity.hours}</h6>
-                <h6>Cost: {dollar}</h6>
+            <div className="activity row d-flex justify-content-center align-items-center">
+                <div className="col-3">
+                    <img src={activity.picture}
+                    alt="logo" width="150px" height="150px" id="activity-logo"/>
+                </div>
+                <div className="col-8">
+                <h2 className="activity-header">{activity.name}</h2>
+                <h4 className="activity-header">{activity.about}</h4>
+                <h6 className="activity-header">Address: {activity.address}</h6>
+                <h6 className="activity-header">Hours: {activity.hours}</h6>
+                <h6 className="activity-header">Cost: {dollar}</h6>
+                </div>
                 <br />
-                <a href={activity.link} className="btn btn-secondary">More Info</a>
+                <a href={activity.link} id="activity-link" className="btn btn-secondary">More Info</a>
             </div>
         </>
     );

@@ -17,11 +17,8 @@ const Hub: React.FC<IHub> = () => {
     return (
         <div>
             <Navbar></Navbar>
-
-            <div className="row d-flex justify-content-center">
-                <div id="timeline" className="col-md-8">
+            <div id="main-area" className="row d-flex justify-content-center">
                     {profiles.map(profile => <ProfileCard profile={profile} key={`profile-${profile.id}`} />)}
-                </div>
             </div>
 
         </div>

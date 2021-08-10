@@ -349,14 +349,102 @@ $theme-colors: (
       color: #EF3B3A;
     }
     body {
-      background: #77815c; /* fallback for old browsers */
-      background: -webkit-linear-gradient(right, #77815c, #77815c);
-      background: -moz-linear-gradient(right, #77815c, #77815c);
-      background: -o-linear-gradient(right, #77815c, #77815c);
-      background: linear-gradient(to left, #77815c, #77815c);
+      background: #327573; /* fallback for old browsers */
+      background: -webkit-linear-gradient(right, #327573, #90dada);
+      background: -moz-linear-gradient(right, #327573, #90dada);
+      background: -o-linear-gradient(right, #327573, #90dada);
+      background: linear-gradient(to left, #327573, #90dada);
       font-family: "Roboto", sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;    
     }
+
+
+// Mitchell
+
+// Navbar
+
+#header-container {
+  background-color: #327573;
+  border-bottom: 5px #ccc923 solid;
+}
+
+#header-title {
+  text-align: left;
+  color: white; 
+  font-size: 3em; 
+  margin: 0;
+  padding: 0 .75em;
+}
+
+#hub-button {
+  background-color: #4da6a6;
+  color: white;
+  border-radius: 0%;
+}
+
+#edit-button {
+  background-color: #4da6a6;
+  color: white;
+  border-radius: 0%;
+}
+
+#activities-button {
+  background-color: #4da6a6;
+  color: white;
+  border-radius: 0%;
+}
+
+#chat-button {
+  background-color: #4da6a6;
+  color: white;
+  border-radius: 0%;
+}
+
+// Hub Page Main Area
+
+#main-area {
+  padding-top: 2em;
+  background: #4da6a6;
+}
+
+
+// Cards
+
+.activity {
+  border: 5px solid #ccc923; 
+  margin: 1em 2em; 
+  padding: 1em; 
+  background-color: #90dada;
+}
+
+.profile {
+  border: 5px solid #ccc923; 
+  margin: 2em 2em; 
+  padding: 1em; 
+  background-color: #90dada;
+}
+
+#profile-button {
+  background-color: #4da6a6;
+  color: white;
+  margin-top: 1em;
+  border-radius: 0%;
+}
+
+.h6 {
+  padding: 1em 0 1em 0;
+}
+
+.activity-header {
+  text-align: center;
+}
+
+#activity-link {
+  background-color:#4da6a6;
+  color: white;
+  margin-top: 1em;
+  border-radius: 0%;
+}
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -18,7 +18,7 @@ const Hub: React.FC<IActivity> = () => {
         <div>
             <Navbar></Navbar>
 
-            <div className="row d-flex justify-content-center">
+            <div id="main-area" className="row d-flex justify-content-center">
                 <div id="timeline" className="col-md-8">
                     {activities.map(activity => <ActivityCard activity={activity} key={`activity-${activity.id}`} />)}
                 </div>
