@@ -17,25 +17,25 @@ const App = (props: AppProps) => {
     <>
       <Router>
         <Switch>
-          <Route exact path = "/">
+          <Route exact path ="/">
             <HomePage />
           </Route>
-          <Route exact path = "/edit">
+          <Route exact path ="/edit">
             <ProfileEdit />
           </Route>
-          <Route exact path = "/profile">
+          <Route exact path ="/profile/:id">
             <Profile />
           </Route>
-          <Route exact path = "/login">
+          <Route exact path ="/login">
             <Login />
           </Route>
-          <Route exact path = "/signup">
+          <Route exact path ="/signup">
             <Signup />
           </Route>
-          <Route exact path = "/hub">
+          <Route exact path ="/hub">
             <Hub />
           </Route>
-          <Route exact path = "/activities">
+          <Route exact path ="/activities">
             <Activities />
           </Route>
         </Switch>
