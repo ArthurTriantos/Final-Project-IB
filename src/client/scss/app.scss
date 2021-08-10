@@ -416,6 +416,7 @@ $theme-colors: (
   margin: 1em 2em; 
   padding: 1em; 
   background-color: #90dada;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .profile {
@@ -423,6 +424,7 @@ $theme-colors: (
   margin: 2em 2em; 
   padding: 1em; 
   background-color: #90dada;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #profile-button {
