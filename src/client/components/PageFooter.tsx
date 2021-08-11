@@ -8,7 +8,7 @@ const PageFooter = (props: { footer: string }) => {
             {props.footer}
           </a>
         </li>
-   
+ 
   );
 };
 
