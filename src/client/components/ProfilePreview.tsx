@@ -43,7 +43,8 @@ const Profile = ({ profile, hobbies }: { profile: any, hobbies: any }) => {
                             <h6>From: {profile.city}, {profile.state}</h6>
                         </div>
                     </div>
-                    <div className="hobby container">
+                    <div id="hobbies-title"><h2>Hobbies</h2></div>
+                    <div className="hobbies-container">
                         <h6>Sports: {array[0]}</h6>
                         <h6>Foodie: {array[1]}</h6>
                         <h6>Running: {array[2]}</h6>
@@ -67,8 +68,6 @@ const Profile = ({ profile, hobbies }: { profile: any, hobbies: any }) => {
                         <h6>Board Games: {array[20]}</h6>
                         <h6>Crafts: {array[21]}</h6>
                     </div>
-                    <br />
-                    <Link to={`/edit/${profile.id}`} id="edit-button" className="btn btn-secondary col-10">Edit Profile</Link>
                 </div>
             </div>
         </>
