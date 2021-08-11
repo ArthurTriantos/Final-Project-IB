@@ -8,7 +8,7 @@ const Profile = ({ profile }: { profile: any }) => {
             <div className="profile col-md-5">
                 <div className="row d-flex justify-content-center align-items-center">
                     <div id="pic-container" className="col-4">
-                        <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png"
+                        <img src={`${profile.image}`}
                             alt="avatar" width="225rem" height="225rem" />
                     </div>
                     <div id="profilecard-content" className="col-8">

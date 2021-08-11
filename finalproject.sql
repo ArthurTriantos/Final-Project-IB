@@ -74,6 +74,7 @@ create table profileinfo (
 	id int not null auto_increment primary key,
     userid int not null,
     firstname varchar(50) not null,
+    image varchar(2000) not null,
     bio varchar(2000) not null,
     spectrum varchar(200) not null,
     relationship varchar(50) not null,
@@ -120,6 +121,13 @@ create table blocks (
     primary key (firstuserid, seconduserid),
     foreign key (firstuserid) references users(id),
     foreign key (seconduserid) references users(id)
+);
+
+create table comments (
+	id int not null auto_increment primary key,
+    username varchar(100) not null,
+    commentText varchar(300) not null,
+    _created datetime default current_timestamp
 );
 
 CREATE USER

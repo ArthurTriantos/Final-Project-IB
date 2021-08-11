@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
+import { useParams } from "react-router";
 import BasicInfo from "../components/BasicInfo";
 import PageFooter from "../components/PageFooter";
 // import Navbar from "../components/Navbar";
 
 const Profile = () => {
+  
   const [basicInfo, setBasicInfo] = useState([
     "Lives In:",
     "Age:",

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PageFooter from "../components/PageFooter";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [footer, setPageFooter] = useState([
@@ -30,20 +31,24 @@ const HomePage = () => {
 
             <div className="d-flex align-items-center buttons-container">
               <div>
+                <Link to="/login">
                 <button
                   type="button"
                   className="btn btn-outline-primary btn-lg m-3"
                 >
                   Login
                 </button>
+                </Link>
               </div>
               <div>
+                <Link to="/signup">
                 <button
                   type="button"
                   className="btn btn-outline-primary btn-lg m-3"
                 >
                   Sign Up!
                 </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -51,15 +51,16 @@ const Hub: React.FC<IHub> = () => {
 interface IHub {}
 
 export interface ProfileState {
-  id: string;
-  firstname: string;
-  spectrum: string;
-  relationship: string;
-  age: string;
-  gender: string;
-  orientation: string;
-  city: string;
-  state: string;
+    id: string, 
+    firstname: string,
+    image: string, 
+    spectrum: string,
+    relationship: string,
+    age: string,
+    gender: string,
+    orientation: string,
+    city: string,
+    state: string
 }
 
 export default Hub;

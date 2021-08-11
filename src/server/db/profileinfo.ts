@@ -4,7 +4,8 @@ const all = async () =>
     Query(`
     SELECT 
         p.id, 
-        p.firstname, 
+        p.firstname,
+        p.image, 
         p.spectrum,
         p.relationship,
         d.age,
@@ -23,7 +24,8 @@ const one = async (id: string) =>
     SELECT 
         p.id, 
         u.username, 
-        p.firstname, 
+        p.firstname,
+        p.image,
         p.bio,
         p.spectrum,
         p.relationship,
@@ -47,23 +49,23 @@ const one = async (id: string) =>
     );
 
 const add = async (
-    userid: string, firstname: string, bio: string, spectrum: string, relationship: string,
+    userid: string, firstname: string, image: string, bio: string, spectrum: string, relationship: string,
     descriptionid: string, locationid: string, hobbiesid: string, sensoryid: string) =>
         Query(`
         INSERT INTO profileinfo 
-        (userid, firstname, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [userid, firstname, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid]
+        (userid, firstname, image, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [userid, firstname, image, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid]
         );
 
 const edit = async (
-    firstname: string, bio: string, spectrum: string, relationship: string,
+    firstname: string, image: string, bio: string, spectrum: string, relationship: string,
     descriptionid: string, locationid: string, hobbiesid: string, sensoryid: string, userid: string) =>
         Query(`
         UPDATE profileinfo 
         SET firstname = ?, bio = ?, spectrum = ?, relationship = ?, descriptionid = ?, locationid = ?, hobbiesid = ?, sensoryid = ?
         WHERE profileinfo.userid = ?`,
-        [firstname, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid, userid]
+        [firstname, image, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid, userid]
         );
 
 // const remove = async (id: string) => Query(`DELETE FROM profileinfo WHERE profileinfo.id = ?`, [id]);
