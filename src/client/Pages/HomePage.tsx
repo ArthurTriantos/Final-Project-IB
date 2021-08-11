@@ -32,22 +32,22 @@ const HomePage = () => {
             <div className="d-flex align-items-center buttons-container">
               <div>
                 <Link to="/login">
-                <button
-                  type="button"
-                  className="btn btn-outline-primary btn-lg m-3"
-                >
-                  Login
-                </button>
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-lg m-3"
+                  >
+                    Login
+                  </button>
                 </Link>
               </div>
               <div>
                 <Link to="/signup">
-                <button
-                  type="button"
-                  className="btn btn-outline-primary btn-lg m-3"
-                >
-                  Sign Up!
-                </button>
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-lg m-3"
+                  >
+                    Sign Up!
+                  </button>
                 </Link>
               </div>
             </div>
@@ -56,14 +56,14 @@ const HomePage = () => {
 
         {/* Cards and site info */}
 
-        <main className="card-container d-flex flex-wrap mt-5 justify-content-around row-3">
-          <div className="card d-flex col-3 border shadow-lg p-3 mb-5 bg-white rounded">
+        <main className="info-card-container card-container d-flex flex-wrap mt-5 mb-0 justify-content-around row-3">
+          <div className="card info-cards d-flex col-3 border shadow-lg p-3 bg-white rounded">
             <img
               className="card-img-top mt-2"
               src="https://media.istockphoto.com/photos/gay-men-couple-at-home-picture-id1174871767?k=6&m=1174871767&s=612x612&w=0&h=FmTQwXedQo8VrcGHu3aR8x0iLn70dUqyLjLqRVZTCj4="
               alt="Card image cap"
             />
-            <div className="card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
+            <div className="card-body info-card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
               <h5 className="home-card-title">About iNDie</h5>
               <p className="card-text d-flex align-items-center">
                 iNDie Connect was designed to help make the process of building
@@ -73,13 +73,13 @@ const HomePage = () => {
               </p>
             </div>
           </div>
-          <div className="card d-flex col-3 border shadow-lg p-3 mb-5 bg-white rounded">
+          <div className="card info-cards d-flex col-3 border shadow-lg p-3 bg-white rounded">
             <img
               className="card-img-top mt-2"
               src="https://www.business.com/images/content/5dc/b51ec5a215e357b8b4572/1500-0-"
               alt="Card image cap"
             />
-            <div className="card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
+            <div className="card-body info-card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
               <h5 className="home-card-title">How It Works</h5>
               <p className="card-text d-flex align-items-center">
                 Simply create your new profile and watch the magic unfold! Each
@@ -91,13 +91,13 @@ const HomePage = () => {
               </p>
             </div>
           </div>
-          <div className="card d-flex col-3 border shadow-lg p-3 mb-5 bg-white rounded">
+          <div className="card info-cards d-flex col-3 border shadow-lg p-3 bg-white rounded">
             <img
               className="card-img-top mt-2"
               src="https://thumbs.dreamstime.com/b/happy-friendly-people-keeping-hands-near-heart-collage-positive-young-casual-clothes-smiling-expressing-love-211447642.jpg"
               alt="Card image cap"
             />
-            <div className="card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
+            <div className="card-body info-card-body text-center d-flex flex-wrap justify-content-center align-items-center ">
               <h5 className="home-card-title">Not Just A Dating Site</h5>
               <p className="card-text d-flex align-items-center">
                 iNDie isnt just another dating site, its a kinship site! Kinship
@@ -111,16 +111,17 @@ const HomePage = () => {
 
         {/* Page footer */}
 
-        <div className="container">
-          <footer className="py-3 my-4">
-            <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
-              {footer.map((footer, index) => (
-                <PageFooter footer={footer} key={index} />
-              ))}
+        <footer className="footer">
+          <div className="container">
+            <ul className="nav home-footer-nav justify-content-center  pb-3 mb-3">
+            {footer.map((footer, index) => (
+              <PageFooter footer={footer} key={index} />
+            ))}
             </ul>
+            <hr />
             <p className="text-center">© 2021 iNDie Connect, Inc</p>
-          </footer>
-        </div>
+          </div>
+        </footer>
       </div>
     </>
   );
