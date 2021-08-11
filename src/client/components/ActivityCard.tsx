@@ -32,7 +32,7 @@ const Activity = ({ activity }: {activity: any}) => {
                 <h6 className="activity-header">Cost: {dollar}</h6>
                 </div>
                 <br />
-                <a href={activity.link} id="activity-link" className="btn btn-secondary btn-outline-primary">More Info</a>
+                <a href={activity.link} id="activity-link" className="btn btn-outline-secondary">Click Here For More Info!</a>
             </div>
         </>
     );

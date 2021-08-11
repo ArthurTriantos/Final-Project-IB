@@ -1,6 +1,15 @@
 import React, { useState } from "react";
+import PageFooter from "../components/PageFooter";
 
 const Login = () => {
+  const [footer, setPageFooter] = useState([
+    "Home",
+    "Features",
+    "Prices",
+    "FAQs",
+    "About",
+  ]);
+
   return (
     <>
       <main className="main-login-container">
@@ -74,6 +83,17 @@ const Login = () => {
             </div>
           </div>
         </div>
+
+        <div className="container">
+          <footer className="py-3 my-4">
+            <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
+              {footer.map((footer, index) => (
+                <PageFooter footer={footer} key={index} />
+              ))}
+            </ul>
+            <p className="text-center">© 2021 iNDie Connect, Inc</p>
+          </footer>
+          </div>
       </main>
     </>
 
