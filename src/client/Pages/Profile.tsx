@@ -2,6 +2,7 @@ import React, { useState, useEffect} from "react";
 import { useParams } from "react-router";
 import BasicInfo from "../components/BasicInfo";
 import PageFooter from "../components/PageFooter";
+// import Navbar from "../components/Navbar";
 
 const Profile = () => {
   
@@ -28,6 +29,7 @@ const Profile = () => {
     <>
       <main className="main-profile-container d-flex justify-content-center">
         <div className="main-profile-div">
+          {/* <Navbar /> */}
           {/* profile picture */}
 
           <div className="card mb-3">

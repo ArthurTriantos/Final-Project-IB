@@ -1,88 +1,83 @@
 $theme-colors: (
-  "primary": #0091ea //Covalence Blue!  :D,,,
-  );
-  
-  // Universal
-  
-  .footer-nav {
-    color: black;
-    border-bottom: 1px solid black !important;
-    margin-left: 3rem;
-  }
+  "primary": #0091ea //Covalence Blue!  :D,,,,,
+);
 
-  
-  // Home Page
-  
-  .main-home-container {
-    background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
-  }
-  
-  .btn-lg, .btn-group-lg > .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1.75rem !important;
-    line-height: 1.5;
-    border-radius: 2rem !important;
-    border: 1px solid !important;
-    font-weight: bold !important;
-  }
-  
-  .home-lead {
-    font-size: larger;
-  }
+// Universal
 
-  .home-card-title {
-    text-align: center !important;
-  }
-  
-  // Edit Profile Page
-  
-  .checkbox-container {
-    margin-top: 1rem;
-  }
-  
-  .main-edit-container {
-    background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-    background-size: cover;
-  }
-  
-  .picture-card {
-    border: solid 1px;
-    height: auto;
-    width: 400px;
-    height: 400px;
-  };
+.footer-nav {
+  color: black;
+  border-bottom: 1px solid black !important;
+  margin-left: 3rem;
+}
 
-  .edit-picture {
-    // object-fit: cover;
-    height: 100%;
-    width: auto;
-  }
+// Home Page
 
-  .edit-selectors > div {
-    width: 15%;
- 
-  }
-  // Profile Page
-  
-  .profile-picture {
-    border: solid 1px;
-    padding: 1rem;
-  }
-  
-  
-  .main-profile-container {
-    background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-    background-size: cover;
-    padding: auto;
+.main-home-container {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+}
 
-  }
-  
-  // .main-profile-div {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-content: center !important;
-  // }
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.75rem !important;
+  line-height: 1.5;
+  border-radius: 2rem !important;
+  border: 1px solid !important;
+  font-weight: bold !important;
+}
 
+.home-lead {
+  font-size: larger;
+}
+
+.home-card-title {
+  text-align: center !important;
+}
+
+// Edit Profile Page
+
+.checkbox-container {
+  margin-top: 1rem;
+}
+
+.main-edit-container {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
+}
+
+.picture-card {
+  border: solid 1px;
+  height: auto;
+  width: 400px;
+  height: 400px;
+}
+
+.edit-picture {
+  // object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.edit-selectors > div {
+  width: 20%;
+}
+
+.edit-select {
+  margin-left: 0rem !important;
+}
+// Profile Page
+
+.profile-picture {
+  border: solid 1px;
+  padding: 1rem;
+}
+
+.main-profile-container {
+  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  background-size: cover;
+  padding: auto;
+}
 
 // Unknown/ need placement
 
@@ -92,7 +87,6 @@ $theme-colors: (
   padding: 1rem !important;
 }
 
-
 .custom-select {
   flex-direction: row !important;
   margin-top: 1rem;
@@ -101,335 +95,413 @@ $theme-colors: (
   padding: 0rem;
 }
 
+// login page
 
-
-
-
-
-
-
-// Kyran CSS
-.body{
-  background-image: url('https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.main-login-container {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
 }
 
-.login-page {
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-  
-  }
-  .form {
-    position: relative;
-    z-index: 1;
-    background: #48a4c9;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    
-  }
+.login-card {
+  width: 80%;
+  margin: 0 auto;
+}
 
-  .form input {
-    font-family: FontAwesome, "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-  border-radius:10px;
-    
-  }
-  .form button {
-    font-family: "Titillium Web", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: .1em;
-    outline: 0;
-    background: #ccc923;
-    width: 100%;
-    border: 0;
-  border-radius:30px;
-    margin: 0px 0px 8px;
-    padding: 15px;
-    color: #FFFFFF;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-    transition: all 0.2s;
-  
-  
-  }
-  .form button:hover,.form button:focus {
-    background: #148f77;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-4px);
-  }
-  .form button:active {
-    transform: translateY(2px);
-    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .form .message {
-    
-    margin: 6px 6px;
-    color: #808080;
-    font-size: 11px;
-    text-align: center;
-    font-weight: bold;
-    font-style: normal;
-  
-    
-  
-  }
-  .form .message a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 13px;
-  }
-  .form .register-form {
-    display: none;
-  }
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  .container:before, .container:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .container .info {
-    margin: 50px auto;
-    text-align: center;
-  }
-  .container .info h1 {
-    margin: 0 0 15px;
-    padding: 0;
-    font-size: 36px;
-    font-weight: 300;
-    color: #1a1a1a;
-  }
-  .container .info span {
-    color: #4d4d4d;
-    font-size: 12px;
-  }
-  .container .info span a {
-    color: #000000;
-    text-decoration: none;
-  }
-  .container .info span .fa {
-    color: #EF3B3A;
-  }
+main {
+  height: 100vh;
+}
 
-  .body{
-    background-image: url('https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  login-page {
-      width: 360px;
-      padding: 8% 0 0;
-      margin: auto;
-    
-    }
-    .form {
-      position: relative;
-      z-index: 1;
-      background: #48a4c9;
-      max-width: 360px;
-      margin: 0 auto 100px;
-      padding: 45px;
-      text-align: center;
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-      
-    }
-    .form input {
-      font-family: FontAwesome, "Roboto", sans-serif;
-      outline: 0;
-      background: #f2f2f2;
-      width: 100%;
-      border: 0;
-      margin: 0 0 15px;
-      padding: 15px;
-      box-sizing: border-box;
-      font-size: 14px;
-    border-radius:10px;
-      
-    }
-    .form button {
-      font-family: "Titillium Web", sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: .1em;
-      outline: 0;
-      background: #ccc923;
-      width: 100%;
-      border: 0;
-    border-radius:30px;
-      margin: 0px 0px 8px;
-      padding: 15px;
-      color: #FFFFFF;
-      -webkit-transition: all 0.3 ease;
-      transition: all 0.3 ease;
-      cursor: pointer;
-      transition: all 0.2s;
-    
-    }
-    .form button:hover,.form button:focus {
-      background: #ccc923;
-       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-      transform: translateY(-4px);
-    }
-    .form button:active {
-      transform: translateY(2px);
-      box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
-    }
-    
-    .form .message {
-      
-      margin: 6px 6px;
-      color: #808080;
-      font-size: 11px;
-      text-align: center;
-      font-weight: bold;
-      font-style: normal;
-    
-      
-    
-    }
-    .form .message a {
-      color: #FFFFFF;
-      text-decoration: none;
-      font-size: 13px;
-    }
-    .form .register-form {
-      display: none;
-    }
-    .container {
-      position: relative;
-      z-index: 1;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    .container:before, .container:after {
-      content: "";
-      display: block;
-      clear: both;
-    }
-    .container .info {
-      margin: 50px auto;
-      text-align: center;
-    }
-    .container .info h1 {
-      margin: 0 0 15px;
-      padding: 0;
-      font-size: 36px;
-      font-weight: 300;
-      color: #1a1a1a;
-    }
-    .container .info span {
-      color: #4d4d4d;
-      font-size: 12px;
-    }
-    .container .info span a {
-      color: #000000;
-      text-decoration: none;
-    }
-    .container .info span .fa {
-      color: #EF3B3A;
-    }
-    body {
-      background: #327573; /* fallback for old browsers */
-      background: -webkit-linear-gradient(right, #327573, #90dada);
-      background: -moz-linear-gradient(right, #327573, #90dada);
-      background: -o-linear-gradient(right, #327573, #90dada);
-      background: linear-gradient(to left, #327573, #90dada);
-      font-family: "Roboto", sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;    
-    }
+.login-card-container {
+  padding: auto;
+}
 
+.login-image {
+  width: 100%;
+  height: 100%;
+}
+
+// sign up page
+
+.main-signup-container {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
+}
+
+.signup-card {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main {
+  height: 100vh;
+}
+
+.signup-card-container {
+  padding: auto;
+}
+
+.signup-image {
+  width: 100%;
+  height: 100%;
+}
+
+// Kyran CSS
+
+// .body {
+//   // background-image: url("https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// // Login Page
+
+// .login-page {
+//   width: 360px;
+//   padding: 8% 0 0;
+//   margin: auto;
+// }
+
+// .form {
+//   position: relative;
+//   z-index: 1;
+//   background: #48a4c9;
+//   max-width: 360px;
+//   margin: 0 auto 100px;
+//   padding: 45px;
+//   text-align: center;
+//   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+// }
+
+// .form input {
+//   font-family: FontAwesome, "Roboto", sans-serif;
+//   outline: 0;
+//   background: #f2f2f2;
+//   width: 100%;
+//   border: 0;
+//   margin: 0 0 15px;
+//   padding: 15px;
+//   box-sizing: border-box;
+//   font-size: 14px;
+//   border-radius: 10px;
+// }
+
+// .form button {
+//   font-family: "Titillium Web", sans-serif;
+//   font-size: 14px;
+//   font-weight: bold;
+//   letter-spacing: 0.1em;
+//   outline: 0;
+//   background: #ccc923;
+//   width: 100%;
+//   border: 0;
+//   border-radius: 30px;
+//   margin: 0px 0px 8px;
+//   padding: 15px;
+//   color: #ffffff;
+//   -webkit-transition: all 0.3 ease;
+//   transition: all 0.3 ease;
+//   cursor: pointer;
+//   transition: all 0.2s;
+// }
+
+// .form button:hover,
+// .form button:focus {
+//   background: #148f77;
+//   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//   transform: translateY(-4px);
+// }
+
+// .form button:active {
+//   transform: translateY(2px);
+//   box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+// }
+
+// .form .message {
+//   margin: 6px 6px;
+//   color: #808080;
+//   font-size: 11px;
+//   text-align: center;
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// .form .message a {
+//   color: #ffffff;
+//   text-decoration: none;
+//   font-size: 13px;
+// }
+
+// .form .register-form {
+//   display: none;
+// }
+
+// .container {
+//   position: relative;
+//   z-index: 1;
+//   max-width: 300px;
+//   margin: 0 auto;
+// }
+
+// .container:before,
+// .container:after {
+//   content: "";
+//   display: block;
+//   clear: both;
+// }
+
+// .container .info {
+//   margin: 50px auto;
+//   text-align: center;
+// }
+
+// .container .info h1 {
+//   margin: 0 0 15px;
+//   padding: 0;
+//   font-size: 36px;
+//   font-weight: 300;
+//   color: #1a1a1a;
+// }
+
+// .container .info span {
+//   color: #4d4d4d;
+//   font-size: 12px;
+// }
+
+// .container .info span a {
+//   color: #000000;
+//   text-decoration: none;
+// }
+
+// .container .info span .fa {
+//   color: #ef3b3a;
+// }
+
+// .body {
+//   background-image: url("https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// login-page {
+//   width: 360px;
+//   padding: 8% 0 0;
+//   margin: auto;
+// }
+
+// .form {
+//   position: relative;
+//   z-index: 1;
+//   background: #48a4c9;
+//   max-width: 360px;
+//   margin: 0 auto 100px;
+//   padding: 45px;
+//   text-align: center;
+//   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+// }
+
+// .form input {
+//   font-family: FontAwesome, "Roboto", sans-serif;
+//   outline: 0;
+//   background: #f2f2f2;
+//   width: 100%;
+//   border: 0;
+//   margin: 0 0 15px;
+//   padding: 15px;
+//   box-sizing: border-box;
+//   font-size: 14px;
+//   border-radius: 10px;
+// }
+
+// .form button {
+//   font-family: "Titillium Web", sans-serif;
+//   font-size: 14px;
+//   font-weight: bold;
+//   letter-spacing: 0.1em;
+//   outline: 0;
+//   background: #ccc923;
+//   width: 100%;
+//   border: 0;
+//   border-radius: 30px;
+//   margin: 0px 0px 8px;
+//   padding: 15px;
+//   color: #ffffff;
+//   -webkit-transition: all 0.3 ease;
+//   transition: all 0.3 ease;
+//   cursor: pointer;
+//   transition: all 0.2s;
+// }
+
+// .form button:hover,
+// .form button:focus {
+//   background: #ccc923;
+//   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//   transform: translateY(-4px);
+// }
+
+// .form button:active {
+//   transform: translateY(2px);
+//   box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+// }
+
+// .form .message {
+//   margin: 6px 6px;
+//   color: #808080;
+//   font-size: 11px;
+//   text-align: center;
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// .form .message a {
+//   color: #ffffff;
+//   text-decoration: none;
+//   font-size: 13px;
+// }
+
+// .form .register-form {
+//   display: none;
+// }
+
+// .container {
+//   position: relative;
+//   z-index: 1;
+//   max-width: 300px;
+//   margin: 0 auto;
+// }
+
+// .container:before,
+// .container:after {
+//   content: "";
+//   display: block;
+//   clear: both;
+// }
+
+// .container .info {
+//   margin: 50px auto;
+//   text-align: center;
+// }
+
+// .container .info h1 {
+//   margin: 0 0 15px;
+//   padding: 0;
+//   font-size: 36px;
+//   font-weight: 300;
+//   color: #1a1a1a;
+// }
+
+// .container .info span {
+//   color: #4d4d4d;
+//   font-size: 12px;
+// }
+
+// .container .info span a {
+//   color: #000000;
+//   text-decoration: none;
+// }
+
+// .container .info span .fa {
+//   color: #ef3b3a;
+// }
+
+// body {
+//   background: #327573; /* fallback for old browsers */
+//   background: -webkit-linear-gradient(right, #327573, #90dada);
+//   background: -moz-linear-gradient(right, #327573, #90dada);
+//   background: -o-linear-gradient(right, #327573, #90dada);
+//   background: linear-gradient(to left, #327573, #90dada);
+//   font-family: "Roboto", sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
 // Mitchell
 
 // Navbar
 
-#header-container {
-  background-color: #327573;
-  border-bottom: 5px #ccc923 solid;
+.nav-title {
+  color: black !important;
 }
+
+.nav-title-container {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
+}
+// #header-container {
+//   background-color: #479639e5;
+//   border-bottom: 5px #ccc923 solid;
+// }
 
 #header-title {
   text-align: left;
-  color: white; 
-  font-size: 3em; 
+  color: white;
+  font-size: 3em;
   margin: 0;
-  padding: 0 .75em;
+  padding: 0 0.75em;
 }
 
 #hub-button {
-  background-color: #4da6a6;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
 #edit-button {
-  background-color: #4da6a6;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
 #activities-button {
-  background-color: #4da6a6;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
 #chat-button {
-  background-color: #4da6a6;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
 // Hub Page Main Area
 
 #main-area {
-  padding-top: 2em;
-  background: #4da6a6;
+  padding-top: 5em;
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
+  // background: #4da6a6;
 }
-
 
 // Cards
 
 .activity {
-  border: 5px solid #ccc923; 
-  margin: 1em 2em; 
-  padding: 1em; 
-  background-color: #90dada;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktvubRljkhpPeIlso5ZbgpVxRk0d7FGBRLgrzXgdAb-4oJXq2DmTV7cptICKwwC7X6jY&usqp=CAU");
+  background-size: cover;
+  border: 5px solid #070701;
+  margin: 1em 2em;
+  padding: 1em;
+  // background-color: #90dada;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .profile {
-  border: 5px solid #ccc923; 
-  margin: 2em 2em; 
-  padding: 1em; 
-  background-color: #90dada;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktvubRljkhpPeIlso5ZbgpVxRk0d7FGBRLgrzXgdAb-4oJXq2DmTV7cptICKwwC7X6jY&usqp=CAU");
+  // background-color: white;
+  background-size: cover;
+  border: 1px solid #030500;
+  margin: 2em 2em;
+  padding: 1em;
+  // background-color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #profile-button {
-  background-color: #4da6a6;
-  color: white;
+  // background-color: white;
+  border: 1px solid #030500;
   margin-top: 1em;
   border-radius: 0%;
 }
@@ -443,8 +515,9 @@ $theme-colors: (
 }
 
 #activity-link {
-  background-color:#4da6a6;
-  color: white;
+  // background-color: #4da6a6;
+  // color: white;
+  border: 1px solid #030500;
   margin-top: 1em;
   border-radius: 0%;
 }
