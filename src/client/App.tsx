@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import HomePage from "./Pages/HomePage";
+import ProfileCreate from "./Pages/ProfileCreate";
 import ProfileEdit from "./Pages/ProfileEdit";
 import ProfilePreview from "./Pages/ProfilePreview";
 import Login from "./Pages/Login";
@@ -20,6 +21,9 @@ const App = (props: AppProps) => {
         <Switch>
           <Route exact path ="/">
             <HomePage />
+          </Route>
+          <Route exact path ="/create/:id">
+            <ProfileCreate />
           </Route>
           <Route exact path ="/edit">
             <ProfileEdit />
