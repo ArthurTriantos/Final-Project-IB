@@ -25,14 +25,14 @@ const Activity = ({ activity }: {activity: any}) => {
                     alt="logo" width="150px" height="150px" id="activity-logo"/>
                 </div>
                 <div className="col-8">
-                <h2 className="activity-header">{activity.name}</h2>
+                <h2 className="activity-header display-6">{activity.name}</h2>
                 <h4 className="activity-header">{activity.about}</h4>
                 <h6 className="activity-header">Address: {activity.address}</h6>
                 <h6 className="activity-header">Hours: {activity.hours}</h6>
                 <h6 className="activity-header">Cost: {dollar}</h6>
                 </div>
                 <br />
-                <a href={activity.link} id="activity-link" className="btn btn-secondary">More Info</a>
+                <a href={activity.link} id="activity-link" className="btn btn-secondary btn-outline-primary">More Info</a>
             </div>
         </>
     );

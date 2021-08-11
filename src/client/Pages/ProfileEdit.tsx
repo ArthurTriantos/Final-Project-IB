@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InterestCheck from "../components/InterestCheck";
 import PageFooter from "../components/PageFooter";
+import Navbar from "../components/Navbar";
 
 const ProfileEdit = () => {
   const [interests, setInterests] = useState([
@@ -40,11 +41,12 @@ const ProfileEdit = () => {
 
   return (
     <>
+    <Navbar></Navbar>
       <main className="main-edit-container d-flex justify-content-center">
         <div className="main-edit-div col-10 mt-5">
           {/* Jumbotron */}
 
-          <div className="edit-jumbotron jumbotron-fluid">
+          <div className="edit-jumbotron mb-5 jumbotron-fluid">
             <div className="container">
               <h1 className="display-4 text-center">Create/Edit Profile</h1>
               <p className="lead text-center">
@@ -56,7 +58,7 @@ const ProfileEdit = () => {
 
           {/* picture and picture upload */}
 
-          <div className="picture-card h-25 w-25">
+          <div className="picture-card mt-5 h-25 w-25">
             <img
               className="card-img-top edit-picture"
               src="https://i.pinimg.com/236x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975--photo-icon-sad.jpg"

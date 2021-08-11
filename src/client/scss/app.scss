@@ -1,5 +1,5 @@
 $theme-colors: (
-  "primary": #0091ea //Covalence Blue!  :D,,,,
+  "primary": #0091ea //Covalence Blue!  :D,,,,,
 );
 
 // Universal
@@ -41,8 +41,9 @@ $theme-colors: (
 }
 
 .main-edit-container {
-  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-  background-size: cover;
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
 }
 
 .picture-card {
@@ -55,11 +56,15 @@ $theme-colors: (
 .edit-picture {
   // object-fit: cover;
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 .edit-selectors > div {
-  width: 15%;
+  width: 20%;
+}
+
+.edit-select {
+  margin-left: 0rem !important;
 }
 // Profile Page
 
@@ -93,8 +98,9 @@ $theme-colors: (
 // login page
 
 .main-login-container {
-  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-  background-size: cover;
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
 }
 
 .login-card {
@@ -118,8 +124,9 @@ main {
 // sign up page
 
 .main-signup-container {
-  background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-  background-size: cover;
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
 }
 
 .signup-card {
@@ -140,13 +147,6 @@ main {
   height: 100%;
 }
 
-
-
-
-
-
-
-
 // Kyran CSS
 
 // .body {
@@ -154,10 +154,6 @@ main {
 //   background-repeat: no-repeat;
 //   background-size: cover;
 // }
-
-
-
-
 
 // // Login Page
 
@@ -424,10 +420,19 @@ main {
 
 // Navbar
 
-#header-container {
-  background-color: #327573;
-  border-bottom: 5px #ccc923 solid;
+.nav-title {
+  color: black !important;
 }
+
+.nav-title-container {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
+}
+// #header-container {
+//   background-color: #479639e5;
+//   border-bottom: 5px #ccc923 solid;
+// }
 
 #header-title {
   text-align: left;
@@ -438,57 +443,63 @@ main {
 }
 
 #hub-button {
-  background-color: #4da6a6;
-  color: white;
+  // background-color: #a64d97;
+  // color: white;
   border-radius: 0%;
 }
 
 #edit-button {
-  background-color: #4da6a6;
-  color: white;
+  // background-color: #4da6a6;
+  // color: white;
   border-radius: 0%;
 }
 
 #activities-button {
-  background-color: #4da6a6;
-  color: white;
+  // background-color: #4da6a6;
+  // color: white;
   border-radius: 0%;
 }
 
 #chat-button {
-  background-color: #4da6a6;
-  color: white;
+  // background-color: #4da6a6;
+  // color: white;
   border-radius: 0%;
 }
 
 // Hub Page Main Area
 
 #main-area {
-  padding-top: 2em;
-  background: #4da6a6;
+  padding-top: 5em;
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+  // background-size: cover;
+  // background: #4da6a6;
 }
 
 // Cards
 
 .activity {
-  border: 5px solid #ccc923;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktvubRljkhpPeIlso5ZbgpVxRk0d7FGBRLgrzXgdAb-4oJXq2DmTV7cptICKwwC7X6jY&usqp=CAU");
+  background-size: cover;
+  border: 5px solid #070701;
   margin: 1em 2em;
   padding: 1em;
-  background-color: #90dada;
+  // background-color: #90dada;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .profile {
-  border: 5px solid #ccc923;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktvubRljkhpPeIlso5ZbgpVxRk0d7FGBRLgrzXgdAb-4oJXq2DmTV7cptICKwwC7X6jY&usqp=CAU");
+  // background-color: white;
+  background-size: cover;
+  border: 1px solid #030500;
   margin: 2em 2em;
   padding: 1em;
-  background-color: #90dada;
+  // background-color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #profile-button {
-  background-color: #4da6a6;
-  color: white;
   margin-top: 1em;
   border-radius: 0%;
 }
@@ -502,8 +513,8 @@ main {
 }
 
 #activity-link {
-  background-color: #4da6a6;
-  color: white;
+  // background-color: #4da6a6;
+  // color: white;
   margin-top: 1em;
   border-radius: 0%;
 }
