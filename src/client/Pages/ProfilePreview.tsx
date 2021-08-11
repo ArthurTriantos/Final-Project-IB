@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 
 import Navbar from '../components/Navbar'
-import Profile from '../components/ProfilePreview'
+import Profile from '../components/PreviewCard'
 
 const ProfilePreview: React.FC<IProfilePreview> = () => {
     const { id }: { id: string } = useParams()
