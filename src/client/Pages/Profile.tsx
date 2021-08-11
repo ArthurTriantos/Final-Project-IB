@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BasicInfo from "../components/BasicInfo";
 import PageFooter from "../components/PageFooter";
+// import Navbar from "../components/Navbar";
 
 const Profile = () => {
   const [basicInfo, setBasicInfo] = useState([
@@ -26,6 +27,7 @@ const Profile = () => {
     <>
       <main className="main-profile-container d-flex justify-content-center">
         <div className="main-profile-div">
+          {/* <Navbar /> */}
           {/* profile picture */}
 
           <div className="card mb-3">
