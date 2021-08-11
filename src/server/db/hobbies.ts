@@ -17,7 +17,7 @@ const one = async (id: string) =>
         swimming,
         hiking,
         excercising,
-        concerts
+        concerts,
         art,
         cooking,
         singing,
