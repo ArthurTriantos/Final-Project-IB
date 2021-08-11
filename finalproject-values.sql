@@ -93,23 +93,23 @@ hyposmell, hypotaste, hypotouch, balance, bodyawareness) VALUES
 (false, false, true, true, false, false, false, false, false, false, true, false),
 (false, false, false, false, true, false, false, true, false, false, false, true);
 
-INSERT INTO profileinfo (userid, firstname, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid) VALUES
-(1, "Joe", "Hi! I'm Joe.  I like football.", "Autistic", "Friendship", 1, 1, 1, 1),
-(2, "Jane", "Hi! I'm Jane.  Let's hangout.", "Person with Autism", "Relationship", 2, 2, 2, 2),
-(3, "Tanner", "No Pic, No Chat", "On the Spectrum", "Relationship", 3, 3, 3, 3),
-(4, "Katie", "I'm bad at making profiles.  Just message me.", "Autistic", "Relationship", 4, 4, 4, 4),
-(5, "Brian", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Other", 5, 5, 5, 5),
-(6, "Hannah", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Person with Autism", "Relationship", 6, 6, 6, 6),
-(7, "Clark", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 7, 7, 7, 7),
-(8, "Emily", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic Person", "Relationship", 8, 8, 8, 8),
-(9, "Sean", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 9, 9, 9, 9),
-(10, "Lizzie", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "On the Spectrum", "Relationship", 10, 10, 10, 10),
-(11, "Sky", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "ASD", "Other", 11, 11, 11, 11),
-(12, "Kylar", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Relationship", 12, 12, 12, 12),
-(13, "Flo", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Austistic", "Relationship", 13, 13, 13, 13),
-(14, "Taylor", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Other", 14, 14, 14, 14),
-(15, "West", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Person with Autism", "Relationship", 15, 15, 15, 15),
-(16, "Sam", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 16, 16, 16, 16);
+INSERT INTO profileinfo (userid, firstname, image, bio, spectrum, relationship, descriptionid, locationid, hobbiesid, sensoryid) VALUES
+(1, "Joe", "https://media.istockphoto.com/photos/happy-smiling-man-looking-away-picture-id1158245623?k=6&m=1158245623&s=612x612&w=0&h=y0LbpRFMHMj_9YC_kpKvLYcijEunxP27KyjXBrDHcFg=", "Hi! I'm Joe.  I like football.", "Autistic", "Friendship", 1, 1, 1, 1),
+(2, "Jane", "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/386-mj-1671-ae.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=8ce11305f86caccab7046fa4b00c4cde", "Hi! I'm Jane.  Let's hangout.", "Person with Autism", "Relationship", 2, 2, 2, 2),
+(3, "Tanner", "https://image.shutterstock.com/mosaic_250/2936380/640011838/stock-photo-handsome-unshaven-young-dark-skinned-male-laughing-out-loud-at-funny-meme-he-found-on-internet-640011838.jpg", "No Pic, No Chat", "On the Spectrum", "Relationship", 3, 3, 3, 3),
+(4, "Katie", "https://images.newrepublic.com/9351cbab311e60a47aae74635034b466c5acba5a.jpeg?auto=compress&w=1400&ar=3%3A2&fit=crop&crop=faces&q=65&fm=jpg&ixlib=react-9.0.2", "I'm bad at making profiles.  Just message me.", "Autistic", "Relationship", 4, 4, 4, 4),
+(5, "Brian", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-Vy1U2EycMeV75CnbgGTI45yGT2yKJ0p3g&usqp=CAU", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Other", 5, 5, 5, 5),
+(6, "Hannah", "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBwZXJzb258ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Person with Autism", "Relationship", 6, 6, 6, 6),
+(7, "Clark", "https://media.istockphoto.com/photos/portrait-of-men-looking-at-camera-picture-id1181083533?k=6&m=1181083533&s=612x612&w=0&h=1l45cytyMWyEwWMtZf0vKPyV5cwy5hIDvoA_Zysi6g8=", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 7, 7, 7, 7),
+(8, "Emily", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_yKvluISKD8MQuZgwZu5HokLVzbcF3SAnA&usqp=CAU", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic Person", "Relationship", 8, 8, 8, 8),
+(9, "Sean", "https://media.istockphoto.com/photos/photo-hui-business-group-shoot-picture-id895886272?k=6&m=895886272&s=612x612&w=0&h=DK1cnmgdnSvhZJP8Nu6PCYzhIBVNuIy40k8j3qv5LWE=", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 9, 9, 9, 9),
+(10, "Lizzie", "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_380,c_fit/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210317104652-07-asian-americans-beauty-industry-restricted.jpg", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "On the Spectrum", "Relationship", 10, 10, 10, 10),
+(11, "Sky", "https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "ASD", "Other", 11, 11, 11, 11),
+(12, "Kylar", "https://image1.masterfile.com/getImage/NjkzLTA2MDE2Mzk1ZW4uMDAwMDAwMDA=AMAF3A/693-06016395en_Masterfile.jpg", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Relationship", 12, 12, 12, 12),
+(13, "Flo", "https://www.ctvnews.ca/polopoly_fs/1.107622.1337370684!/httpImage/image._gen/derivatives/landscape_620/image.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Austistic", "Relationship", 13, 13, 13, 13),
+(14, "Taylor", "https://images.unsplash.com/photo-1568990545613-aa37e9353eb6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Asperger's", "Other", 14, 14, 14, 14),
+(15, "West", "https://image.shutterstock.com/image-photo/latin-hipster-guy-wearing-glasses-260nw-333000893.jpg", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Person with Autism", "Relationship", 15, 15, 15, 15),
+(16, "Sam", "https://www.8asians.com/wp-content/uploads/2011/11/thanksgiving-stock-photo.jpg", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis massa tincidunt dui ut ornare lectus sit amet.", "Autistic", "Friendship", 16, 16, 16, 16);
 
 INSERT INTO activities (name, about, address, link, picture, hours, cost) VALUES
 ("Birmingham Zoo","A wildlife zoo containing lions, zebras, rhinos, giraffes, and many more animals", "2630 Cahaba Road, Birmingham, AL 35223", "https://www.birminghamzoo.com", "https://www.birminghamzoo.com/wp-content/themes/birminghamzoo.com/style/images/logo.svg", "Wednesday - Sunday: 9:00AM - 5:00PM", 2),
@@ -132,3 +132,19 @@ INSERT INTO questions (sentence) VALUES
 ("What is your zodiac sign?"),
 ("What was your favorite school subject?"),
 ("If you could have a superpower, what would you want?");
+
+INSERT INTO comments (username, commentText) VALUES
+("Joe", "I'm so glad to be on iNDie Connect"),
+("Jane", "Me too, this website is cool."),
+("Tanner", "Glad to meet everyone."),
+("Katie", "I'm looking for friends!!!"),
+("Brian", "I'll be your friend, Katie!"),
+("Joe", "Me too!!!"),
+("Jane", "Me three!!!"),
+("Tanner", "Who ever made this website must be cool."),
+("Katie", "I agree with you Tanner."),
+("Tanner", "TY Katie."),
+("Brian", "Hey Judges! Pick us to win."),
+("Joe", "What Brian just said."),
+("Joe", "Chat Chat Chat."),
+("Jane", "LOL Joe.");

@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import HomePage from "./Pages/HomePage";
 import ProfileEdit from "./Pages/ProfileEdit";
-import Profile from "./Pages/Profile";
+import ProfilePreview from "./Pages/ProfilePreview";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Hub from "./Pages/Hub";
 import Activities from "./Pages/Activities";
+import Chat from "./Pages/Chat";
 
 /* HOOK REACT EXAMPLE */
 const App = (props: AppProps) => {
@@ -24,7 +25,7 @@ const App = (props: AppProps) => {
             <ProfileEdit />
           </Route>
           <Route exact path ="/profile/:id">
-            <Profile />
+            <ProfilePreview />
           </Route>
           <Route exact path ="/login">
             <Login />
@@ -37,6 +38,9 @@ const App = (props: AppProps) => {
           </Route>
           <Route exact path ="/activities">
             <Activities />
+          </Route>
+          <Route exact path ="/chat">
+            <Chat />
           </Route>
         </Switch>
       </Router>

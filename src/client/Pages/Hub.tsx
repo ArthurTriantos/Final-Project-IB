@@ -29,7 +29,8 @@ interface IHub {}
 
 export interface ProfileState {
     id: string, 
-    firstname: string, 
+    firstname: string,
+    image: string, 
     spectrum: string,
     relationship: string,
     age: string,

@@ -8,6 +8,7 @@ import hobbies from './hobbies';
 import sensorytags from './sensorytags';
 import users from './users';
 import activities from './activities';
+import comments from './comments';
 
 const Connection = mysql.createConnection(config.mysql);
 
@@ -27,5 +28,6 @@ export default {
     hobbies,
     sensorytags,
     users,
-    activities
+    activities,
+    comments
 }

@@ -80,7 +80,8 @@ router.post('/', async (req, res) => {
         );
         await db.profileinfo.add(
             profileObject.userid, 
-            profileObject.firstname, 
+            profileObject.firstname,
+            profileObject.image, 
             profileObject.bio, 
             profileObject.spectrum, 
             profileObject.relationship,
@@ -156,7 +157,8 @@ router.put('/:id', async (req, res) => {
         );
         await db.profileinfo.add(
             profileObject.userid, 
-            profileObject.firstname, 
+            profileObject.firstname,
+            profileObject.image, 
             profileObject.bio, 
             profileObject.spectrum, 
             profileObject.relationship,
@@ -191,6 +193,7 @@ router.put('/:id', async (req, res) => {
 interface profile {
     userid: string,
     firstname: string,
+    image: string,
     bio: string,
     spectrum: string,
     relationship: string,
