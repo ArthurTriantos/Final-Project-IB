@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 import PageFooter from "../components/PageFooter";
 
 const Login = () => {
+  const history = useHistory();
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
@@ -9,6 +11,19 @@ const Login = () => {
     "FAQs",
     "About",
   ]);
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  function submit(e: { preventDefault: () => void; }) {
+    e.preventDefault();
+    if (username != '' && password != '') {
+    history.push('/hub')
+    } else {
+      alert('Username and Password Do Not Match.')
+    }
+
+  }
 
   return (
     <>
@@ -49,11 +64,12 @@ const Login = () => {
                     <div className="form-group mt-5 text-center">
                       <label htmlFor="exampleInputEmail1">Email address</label>
                       <input
-                        type="email"
+                        type="text"
                         className="form-control text-center"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         placeholder="Enter email"
+                        onChange={e => { setUsername(e.target.value) }}
                       />
                       <small
                         id="emailHelp"
@@ -69,10 +85,12 @@ const Login = () => {
                         className="form-control text-center"
                         id="exampleInputPassword1"
                         placeholder="Password"
+                        onChange={e => { setPassword(e.target.value) }}
                       />
                       <button
                         type="submit"
                         className="btn-submit btn-outline-primary mt-5 btn-lg"
+                        onClick={submit}
                       >
                         Login
                       </button>

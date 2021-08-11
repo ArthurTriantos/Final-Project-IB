@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router";
 import PageFooter from "../components/PageFooter";
 
 const Singup = () => {
+  const history = useHistory();
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
@@ -9,6 +11,31 @@ const Singup = () => {
     "FAQs",
     "About",
   ]);
+
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
+
+  async function submit(e: { preventDefault: () => void; }) {
+    if (password === confirm) {
+      e.preventDefault();
+      let newUser: { username: string, email: string, password: string } = {
+        username: username,
+        email: email,
+        password: password
+      }
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", '/api/users', false);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify(newUser))
+      
+      history.push(`/create/${xhr.response}`)
+    } else {
+      alert('Passwords Do Not Match.')
+    }
+  }
 
   return (
     <>
@@ -49,11 +76,12 @@ const Singup = () => {
                     <div className="form-group text-center">
                       <label htmlFor="exampleInputEmail1">Username</label>
                       <input
-                        type="email"
+                        type="text"
                         className="form-control text-center"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         placeholder="Username"
+                        onChange={e => { setUsername(e.target.value) }}
                       />
                     </div>
                     <div className="form-group text-center">
@@ -64,6 +92,7 @@ const Singup = () => {
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         placeholder="Enter email"
+                        onChange={e => { setEmail(e.target.value) }}
                       />
                       <small
                         id="emailHelp"
@@ -79,6 +108,7 @@ const Singup = () => {
                         className="form-control text-center mb-3"
                         id="exampleInputPassword1"
                         placeholder="Password"
+                        onChange={e => { setPassword(e.target.value) }}
                       />
                       <label htmlFor="exampleInputPassword1">Confirm Password</label>
                       <input
@@ -86,10 +116,12 @@ const Singup = () => {
                         className="form-control text-center"
                         id="exampleInputPassword1"
                         placeholder="Confirm Password"
+                        onChange={e => { setConfirm(e.target.value) }}
                       />
                       <button
                         type="submit"
                         className="btn-submit btn-outline-primary mt-5 btn-lg"
+                        onClick={submit}
                       >
                         Sign Up!
                       </button>
@@ -109,7 +141,7 @@ const Singup = () => {
             </ul>
             <p className="text-center">© 2021 iNDie Connect, Inc</p>
           </footer>
-          </div>
+        </div>
       </main>
     </>
 

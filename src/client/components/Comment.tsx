@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Comment = ({ comment }) => {
+const Comment = ({ comment }: { comment: any}) => {
     return (
         <>
             <div className="chirp">
