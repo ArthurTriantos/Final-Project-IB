@@ -22,7 +22,7 @@ const Profile = ({ profile }: { profile: any }) => {
                         </div>
                     </div>
                     <br />
-                    <Link to={`/profile/${profile.id}`} id="profile-button" className="btn btn-secondary btn-outline-primary col-10">More Info</Link>
+                    <Link to={`/profile/${profile.id}`} id="profile-button" className="btn btn-outline-secondary shadow col-10">More Info</Link>
                 </div>
             </div>
         </>

@@ -443,26 +443,26 @@ main {
 }
 
 #hub-button {
-  // background-color: #a64d97;
-  // color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
 #edit-button {
-  // background-color: #4da6a6;
-  // color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
 #activities-button {
-  // background-color: #4da6a6;
-  // color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
 #chat-button {
-  // background-color: #4da6a6;
-  // color: white;
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 1px solid;
   border-radius: 0%;
 }
 
@@ -500,6 +500,8 @@ main {
 }
 
 #profile-button {
+  // background-color: white;
+  border: 1px solid #030500;
   margin-top: 1em;
   border-radius: 0%;
 }
@@ -515,6 +517,7 @@ main {
 #activity-link {
   // background-color: #4da6a6;
   // color: white;
+  border: 1px solid #030500;
   margin-top: 1em;
   border-radius: 0%;
 }
