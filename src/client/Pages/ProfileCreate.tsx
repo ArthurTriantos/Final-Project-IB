@@ -117,7 +117,7 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
         <>
             <Navbar></Navbar>
             <main className="main-edit-container d-flex justify-content-center">
-                <div className="main-edit-div col-10 mt-5">
+                <div className="main-edit-div col-12 mt-5">
                     {/* Jumbotron */}
 
                     <div className="edit-jumbotron mb-5 jumbotron-fluid">
@@ -130,44 +130,44 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                     </div>
 
                     {/* picture and picture upload */}
-
-                    <div className="picture-card mt-5 h-25 w-25">
-                        <img
-                            className="card-img-top edit-picture"
-                            src="https://i.pinimg.com/236x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975--photo-icon-sad.jpg"
-                            alt="Card image cap"
-                        />
-                    </div>
-                    <div className="card-body">
-                        <div className="input-group">
-                            <div className="custom-file">
-                                <input
-                                    type="file"
-                                    className="custom-file-input"
-                                    id="inputGroupFile02"
-                                />
-                                <label
-                                    className="custom-file-label text-center"
-                                    htmlFor="inputGroupFile02"
-                                    aria-describedby="inputGroupFileAddon02"
-                                >
-                                    sad.jpg
-                                </label>
-                            </div>
-                            <div className="input-group-append">
-                                <span className="input-group-text" id="inputGroupFileAddon02">
-                                    Upload
-                                </span>
+                    <div className="row d-flex justify-content-center">
+                        <div className="picture-card mt-1 h-25 w-25 col-4">
+                            <img
+                                className="card-img-top edit-picture"
+                                src="https://i.pinimg.com/236x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975--photo-icon-sad.jpg"
+                                alt="Card image cap"
+                            />
+                        </div>
+                        <div className="card-body">
+                            <div className="input-group">
+                                <div className="custom-file">
+                                    <input
+                                        type="file"
+                                        className="custom-file-input"
+                                        id="inputGroupFile02"
+                                    />
+                                    <label
+                                        className="custom-file-label text-center"
+                                        htmlFor="inputGroupFile02"
+                                        aria-describedby="inputGroupFileAddon02"
+                                    >
+                                        sad.jpg
+                                    </label>
+                                </div>
+                                <div className="input-group-append">
+                                    <span className="input-group-text" id="inputGroupFileAddon02">
+                                        Upload
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                     {/* beginning of form */}
 
-                    <div className="form-container">
+                    <div className="form-container container d-flex justify-content-center">
                         <form>
-                            <div className="form-row d-flex justify-content-center">
-                                <div className="col-md-4 mb-3">
+                            <div className="form-row row mb-2">
+                                <div className="col-md-4">
                                     <label htmlFor="validationDefault01">First name</label>
                                     <input
                                         type="text"
@@ -178,117 +178,116 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         onChange={e => { setFirstname(e.target.value) }}
                                     />
                                 </div>
-                                <div className="form-row">
-                                    <div className="col-md-6 mb-3">
-                                        <label htmlFor="validationDefault03">City</label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            id="validationDefault03"
-                                            placeholder="City"
-                                            required
-                                            onChange={e => { setCity(e.target.value) }}
-                                        />
-                                    </div>
-                                    <div className="col-md-3 mb-3">
-                                        <label htmlFor="validationDefault04">State</label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            id="validationDefault04"
-                                            placeholder="State"
-                                            required
-                                            onChange={e => { setState(e.target.value) }}
-                                        />
-                                    </div>
+                                <div className="col-md-4">
+                                    <label htmlFor="validationDefault03">City</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="validationDefault03"
+                                        placeholder="City"
+                                        required
+                                        onChange={e => { setCity(e.target.value) }}
+                                    />
                                 </div>
-                                <div className="form-row">
-                                    <div className="col">
-                                        <label htmlFor="validationDefault04">Age</label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            placeholder="Age"
-                                            onChange={e => { setAge(e.target.value) }}
-                                        />
-                                    </div>
-                                    <div className="col">
-                                        <label htmlFor="validationDefault04">Height</label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            placeholder="Height"
-                                            onChange={e => { setHeight(e.target.value) }}
-                                        />
-                                    </div>
+                                <div className="col-md-4">
+                                    <label htmlFor="validationDefault04">State</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="validationDefault04"
+                                        placeholder="State"
+                                        required
+                                        onChange={e => { setState(e.target.value) }}
+                                    />
                                 </div>
                             </div>
-                                {/* drop-down multi select */}
 
-                                <div className="menu-group row mt-3 d-flex justify-content-between edit-selectors">
-                                    <div>
-                                        <select className="edit-select custom-select col-12" onChange={e => { setGender(e.target.value) }}>
-                                            <option>Select Your Gender</option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-                                            <option value="Trans Man">Trans-man</option>
-                                            <option value="Trans Woman">Trans-woman</option>
-                                            <option value="Non-Binary">Non-binary</option>
-                                            <option value="Intersex">Intersex</option>
-                                            <option value="Questioning">Questioning</option>
-                                            <option value="Prefer Not To Say">Prefer Not To Say</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <select className="edit-select custom-select col-12" onChange={e => { setOrientation(e.target.value) }}>
-                                            <option>Select Your Sexual Orientation</option>
-                                            <option value="Straight">Straight</option>
-                                            <option value="Gay">Gay</option>
-                                            <option value="Lesbian">Lesbian</option>
-                                            <option value="Bisexual">Bisexual</option>
-                                            <option value="Pansexual">Pansexual</option>
-                                            <option value="Asexual">Asexual</option>
-                                            <option value="Queer">Queer</option>
-                                            <option value="Questioning">Questioning</option>
-                                            <option value="Prefer Not To Say">Prefer Not To Say</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <select className="edit-select custom-select col-12" onChange={e => { setEthnicity(e.target.value) }}>
-                                            <option>Select Your Ethnicity</option>
-                                            <option value="Asian">Asian</option>
-                                            <option value="Black">Black</option>
-                                            <option value="Hispanic/Latino">Hispanic/Latino</option>
-                                            <option value="South Asian">South Asian</option>
-                                            <option value="Middle Eastern">Middle Eastern</option>
-                                            <option value="Pacific Islander">Pacific Islander</option>
-                                            <option value="White">White</option>
-                                            <option value="Native American">Native American</option>
-                                            <option value="Multi-Racial">Multi-Racial</option>
-                                            <option value="Prefer Not To Say">Prefer Not To Say</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <select className="edit-select custom-select col-12" onChange={e => { setRelationship(e.target.value) }}>
-                                            <option>Seeking Relationship Type</option>
-                                            <option value="Friendship">Friendship</option>
-                                            <option value="Relationship">Relationship</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
+                            <div className="form-row row d-flex justify-content-center">
+                                <div className="col-md-3">
+                                    <label htmlFor="validationDefault04">Age</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Age"
+                                        onChange={e => { setAge(e.target.value) }}
+                                    />
                                 </div>
+                                <div className="col-md-3">
+                                    <label htmlFor="validationDefault04">Height</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Height"
+                                        onChange={e => { setHeight(e.target.value) }}
+                                    />
+                                </div>
+                            </div>
+                            {/* drop-down multi select */}
 
-                                {/* multi-select checkboxes */}
+                            <div className="menu-group row mt-3 mb-5 d-flex justify-content-between edit-selectors">
+                                <div>
+                                    <select className="edit-select custom-select col-12 m-0" onChange={e => { setGender(e.target.value) }}>
+                                        <option>Select Your Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Trans Man">Trans-man</option>
+                                        <option value="Trans Woman">Trans-woman</option>
+                                        <option value="Non-Binary">Non-binary</option>
+                                        <option value="Intersex">Intersex</option>
+                                        <option value="Questioning">Questioning</option>
+                                        <option value="Prefer Not To Say">Prefer Not To Say</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select className="edit-select custom-select col-12 m-0" onChange={e => { setOrientation(e.target.value) }}>
+                                        <option>Select Your Sexual Orientation</option>
+                                        <option value="Straight">Straight</option>
+                                        <option value="Gay">Gay</option>
+                                        <option value="Lesbian">Lesbian</option>
+                                        <option value="Bisexual">Bisexual</option>
+                                        <option value="Pansexual">Pansexual</option>
+                                        <option value="Asexual">Asexual</option>
+                                        <option value="Queer">Queer</option>
+                                        <option value="Questioning">Questioning</option>
+                                        <option value="Prefer Not To Say">Prefer Not To Say</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select className="edit-select custom-select col-12 m-0" onChange={e => { setEthnicity(e.target.value) }}>
+                                        <option>Select Your Ethnicity</option>
+                                        <option value="Asian">Asian</option>
+                                        <option value="Black">Black</option>
+                                        <option value="Hispanic/Latino">Hispanic/Latino</option>
+                                        <option value="South Asian">South Asian</option>
+                                        <option value="Middle Eastern">Middle Eastern</option>
+                                        <option value="Pacific Islander">Pacific Islander</option>
+                                        <option value="White">White</option>
+                                        <option value="Native American">Native American</option>
+                                        <option value="Multi-Racial">Multi-Racial</option>
+                                        <option value="Prefer Not To Say">Prefer Not To Say</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select className="edit-select custom-select col-12 m-0" onChange={e => { setRelationship(e.target.value) }}>
+                                        <option>Seeking Relationship Type</option>
+                                        <option value="Friendship">Friendship</option>
+                                        <option value="Relationship">Relationship</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                                <h5 className="interests mt-3">
-                                    Interests (select all that apply)
-                                </h5>
-                                
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                            {/* multi-select checkboxes */}
+
+                            <h5 className="interests mt-5">
+                                Interests (select all that apply)
+                            </h5>
+                            <div className="container d-flex justify-content-center flex-wrap">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -300,8 +299,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -313,8 +312,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -326,8 +325,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -339,8 +338,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -352,8 +351,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -365,8 +364,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -378,8 +377,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -391,8 +390,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -404,8 +403,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -417,8 +416,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -430,8 +429,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -443,8 +442,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -456,8 +455,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -469,8 +468,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -482,8 +481,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -495,8 +494,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -508,8 +507,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -521,8 +520,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -534,8 +533,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -547,8 +546,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -560,8 +559,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -573,8 +572,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
-                                <div className="checkbox-container row">
-                                    <div className="form-check col-2">
+                                <div className="checkbox-container col-2">
+                                    <div className="form-check">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -586,112 +585,112 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+                            {/* text boxes (about me and Neurodiverse info) */}
 
-                                {/* text boxes (about me and Neurodiverse info) */}
-
-                                <div className="text-area mt-3">
-                                    <div className="form-group mb-1">
-                                        <label htmlFor="exampleFormControlTextarea1">
-                                            About me: (Tell us a little about yourself!)
-                                        </label>
-                                        <textarea
-                                            className="form-control"
-                                            id="exampleFormControlTextarea1"
-                                            onChange={e => { setBio(e.target.value) }}
-                                        ></textarea>
-                                    </div>
-                                    <br></br>
-                                    <div className="form-group">
-                                        <label htmlFor="exampleFormControlTextarea1">
-                                            Neurodiversity Information: (Tell us a little about your
-                                            Neurodiversity!)
-                                        </label>
-                                        <textarea
-                                            className="form-control"
-                                            id="exampleFormControlTextarea1"
-                                            onChange={e => { setSpectrum(e.target.value) }}
-                                        ></textarea>
-                                    </div>
+                            <div className="text-area mt-3">
+                                <div className="form-group mb-1">
+                                    <label htmlFor="exampleFormControlTextarea1">
+                                        About me: (Tell us a little about yourself!)
+                                    </label>
+                                    <textarea
+                                        className="form-control"
+                                        id="exampleFormControlTextarea1"
+                                        onChange={e => { setBio(e.target.value) }}
+                                    ></textarea>
                                 </div>
-
-                                <div>
-                                    <button id="submit-button" className="btn btn-outline-secondary col-md-2 m-2" onClick={submit}>
-                                        Submit
-                                    </button>
+                                <br></br>
+                                <div className="form-group">
+                                    <label htmlFor="exampleFormControlTextarea1">
+                                        Neurodiversity Information: (Tell us a little about your
+                                        Neurodiversity!)
+                                    </label>
+                                    <textarea
+                                        className="form-control"
+                                        id="exampleFormControlTextarea1"
+                                        onChange={e => { setSpectrum(e.target.value) }}
+                                    ></textarea>
                                 </div>
+                            </div>
 
-                                {/* page footer */}
+                            <div>
+                                <button id="submit-button" className="btn btn-outline-secondary col-md-2 m-2" onClick={submit}>
+                                    Submit
+                                </button>
+                            </div>
 
-                                <div className="container">
-                                    <footer className="py-3 my-4">
-                                        <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
-                                            {footer.map((footer, index) => (
-                                                <PageFooter footer={footer} key={index} />
-                                            ))}
-                                        </ul>
-                                        <p className="text-center">© 2021 iNDie Connect, Inc</p>
-                                    </footer>
-                                </div>
+                            {/* page footer */}
+
+                            <div className="container">
+                                <footer className="py-3 my-4">
+                                    <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
+                                        {footer.map((footer, index) => (
+                                            <PageFooter footer={footer} key={index} />
+                                        ))}
+                                    </ul>
+                                    <p className="text-center">© 2021 iNDie Connect, Inc</p>
+                                </footer>
+                            </div>
                         </form>
                     </div>
-                    </div>
+                </div>
             </main>
         </>
 
-            );
+    );
 };
 
-            interface IProfileCreate { }
+interface IProfileCreate { }
 
-            interface profile {
-                userid: string,
-            firstname: string,
-            image: string,
-            bio: string,
-            spectrum: string,
-            relationship: string,
-            age: string,
-            gender: string,
-            orientation: string,
-            ethnicity: string,
-            height: string,
-            city: string,
-            state: string,
-            sports: boolean,
-            foodie: boolean,
-            running: boolean,
-            travel: boolean,
-            movies: boolean,
-            reading: boolean,
-            fashion: boolean,
-            videogames: boolean,
-            dancing: boolean,
-            cycling: boolean,
-            music: boolean,
-            swimming: boolean,
-            hiking: boolean,
-            excercising: boolean,
-            concerts: boolean,
-            art: boolean,
-            cooking: boolean,
-            singing: boolean,
-            baking: boolean,
-            animals: boolean,
-            camping: boolean,
-            boardgames: boolean,
-            crafts: boolean,
-            hypersight: boolean,
-            hypersound: boolean,
-            hypersmell: boolean,
-            hypertaste: boolean,
-            hypertouch: boolean,
-            hyposight: boolean,
-            hyposound: boolean,
-            hyposmell: boolean,
-            hypotaste: boolean,
-            hypotouch: boolean,
-            balance: boolean,
-            bodyawareness: boolean
+interface profile {
+    userid: string,
+    firstname: string,
+    image: string,
+    bio: string,
+    spectrum: string,
+    relationship: string,
+    age: string,
+    gender: string,
+    orientation: string,
+    ethnicity: string,
+    height: string,
+    city: string,
+    state: string,
+    sports: boolean,
+    foodie: boolean,
+    running: boolean,
+    travel: boolean,
+    movies: boolean,
+    reading: boolean,
+    fashion: boolean,
+    videogames: boolean,
+    dancing: boolean,
+    cycling: boolean,
+    music: boolean,
+    swimming: boolean,
+    hiking: boolean,
+    excercising: boolean,
+    concerts: boolean,
+    art: boolean,
+    cooking: boolean,
+    singing: boolean,
+    baking: boolean,
+    animals: boolean,
+    camping: boolean,
+    boardgames: boolean,
+    crafts: boolean,
+    hypersight: boolean,
+    hypersound: boolean,
+    hypersmell: boolean,
+    hypertaste: boolean,
+    hypertouch: boolean,
+    hyposight: boolean,
+    hyposound: boolean,
+    hyposmell: boolean,
+    hypotaste: boolean,
+    hypotouch: boolean,
+    balance: boolean,
+    bodyawareness: boolean
 }
 
-            export default ProfileCreate;
+export default ProfileCreate;
