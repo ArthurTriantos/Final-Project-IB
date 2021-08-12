@@ -28,7 +28,7 @@ const Chat: React.FC<IChat> = () => {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(newComment));
 
-    history.goBack();
+    history.push('/hub');
   }
 
   useEffect(() => {
