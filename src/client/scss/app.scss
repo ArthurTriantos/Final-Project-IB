@@ -2,22 +2,35 @@ $theme-colors: (
   "primary": #0091ea //Covalence Blue!  :D,,,,,,
 );
 
+body {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+}
+
 // Universal
 
+.jumbo-header {
+  // border-bottom: 1px solid black;
+  text-align: center; 
+}
+
 .footer {
-  position: absolute;
+  position: absolute !important;
   width: 100%;
   bottom: 0;
 }
+
 .footer-nav {
   color: black;
   border-bottom: 1px solid black !important;
-  margin-left: 3rem;
-  // position: absolute;
-  // text-align: center;
-  // width: 100%;
-  // left: 0;
-  // bottom: 0;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.indie-logo {
+  justify-content:center;
+  text-align: center;
 }
 
 // Home Page
@@ -55,6 +68,10 @@ $theme-colors: (
   text-align: center !important;
 }
 
+.home-jumbo {
+  border-bottom: 1px solid black;
+}
+
 // Edit Profile Page
 
 .aboutme-box {
@@ -81,17 +98,17 @@ $theme-colors: (
 }
 
 .picture-card {
-  border: solid 1px;
   height: auto;
   width: 400px;
   height: 400px;
 }
 
-.edit-picture {
-  // object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
+// .edit-picture {
+//   // object-fit: cover;
+//   height: 100%;
+//   width: 100%;
+
+// }
 
 .edit-selectors > div {
   justify-content:space-between !important;
@@ -199,13 +216,13 @@ main {
 //   width: 75% !important;
 // }
 
-.profile-upload {
-  // width: 40%
-}
+// .profile-upload {
+//   width: 40%
+// }
 
-.custom-file-label {
-  // width: 30%
-}
+// .custom-file-label {
+//   width: 30%
+// }
 
 // chat page
 
@@ -213,6 +230,13 @@ main {
   background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg")
 }
 
+.comment-box-name {
+  color: #3b93da;
+}
+
+.comment-box-name:before {
+  content:"• ";
+}
 
 
 
@@ -221,9 +245,12 @@ main {
 
 
 
+// Garrett test stuff ahhh // DO NOT REMOVE
 
-
-
+#chat-footer {
+  position: relative !important;
+  top: 1600px;
+}
 
 
 
@@ -241,6 +268,7 @@ main {
 
 .nav-title-container {
   background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  border-bottom: 1px solid black;
   // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
   // background-size: cover;
 }
@@ -296,7 +324,7 @@ main {
 .activity {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktvubRljkhpPeIlso5ZbgpVxRk0d7FGBRLgrzXgdAb-4oJXq2DmTV7cptICKwwC7X6jY&usqp=CAU");
   background-size: cover;
-  border: 5px solid #070701;
+  border: 2px solid #070701;
   margin: 1em 2em;
   padding: 1em;
   // background-color: #90dada;
@@ -307,7 +335,7 @@ main {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktvubRljkhpPeIlso5ZbgpVxRk0d7FGBRLgrzXgdAb-4oJXq2DmTV7cptICKwwC7X6jY&usqp=CAU");
   // background-color: white;
   background-size: cover;
-  border: 1px solid #030500;
+  border: 2px solid #030500;
   margin: 2em 2em;
   padding: 1em;
   // background-color: white;
@@ -346,7 +374,6 @@ main {
 #chirp-form {
   display: flex;
   flex-direction: column;
-  border: 5px black solid;
   margin-top: 1em;
   padding: 1em;
   background-color: white;
@@ -378,11 +405,11 @@ main {
 }
 
 .chirp {
-  border: 5px solid black;
   margin: 0 2em 1em;
   margin-top: 0;
   padding: 1em;
   background-color: white;
 }
+
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";

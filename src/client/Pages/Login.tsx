@@ -5,7 +5,6 @@ const Login = () => {
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
-    "Prices",
     "FAQs",
     "About",
   ]);
@@ -31,7 +30,7 @@ const Login = () => {
 
         {/* card */}
 
-        <div className="login-card-container container card my-5">
+        <div className="login-card-container container card border shadow-lg my-5">
           <div className="row no-gutters">
             <div className="col-md-6">
               <img
