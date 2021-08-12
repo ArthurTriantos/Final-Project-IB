@@ -40,10 +40,14 @@ const Chat: React.FC<IChat> = () => {
       <main className="main-chat-container">
         <Navbar></Navbar>
 
-        <div className="row mt-5">
-          <div className="col-md-4 mt-4">
+        <div className="container mt-3">
+          <h1 className="display-4 text-center jumbo-header">Chat Room</h1>
+        </div>
+
+        <div className="row mt-3">
+          <div className="col-md-4 mt-2">
             <div id="form-container">
-              <form className="border shadow-lg"id="chirp-form" action="">
+              <form id="chirp-form" action="">
                 <h3 id="form-title">New Comment</h3>
                 <input
                   id="username-input"
@@ -69,7 +73,7 @@ const Chat: React.FC<IChat> = () => {
             </div>
           </div>
 
-          <div id="timeline" className="col-md-8 mt-5">
+          <div id="timeline" className="col-md-8 mt-4">
             {comments.map((comment) => (
               <Comment comment={comment} key={`comment-${comment.id}`} />
             ))}
@@ -80,7 +84,7 @@ const Chat: React.FC<IChat> = () => {
   );
 };
 
-interface IChat {}
+interface IChat { }
 
 export interface CommentState {
   id: string;

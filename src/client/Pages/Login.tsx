@@ -34,7 +34,7 @@ const Login = () => {
 
             <div className="login-jumbotron jumbotron-fluid mt-5">
               <div className="container">
-                <h1 className="display-4">iNDie Connect</h1>
+                <h1 className="display-4" id="logo">iNDie Connect</h1>
                 <p className="lead">
                   Connecting you with long lasting friendships and/or romantic
                   partnerships near you.
@@ -89,7 +89,8 @@ const Login = () => {
                       />
                       <button
                         type="submit"
-                        className="btn-submit btn-outline-primary mt-5 btn-lg"
+                        className="btn btn-outline-primary btn-lg m-3"
+                        id="login-button"
                         onClick={submit}
                       >
                         Login
@@ -102,7 +103,7 @@ const Login = () => {
           </div>
         </div>
 
-        <footer className="footer">
+        {/* <footer className="footer">
           <div className="container">
             <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
               {footer.map((footer, index) => (
@@ -111,7 +112,7 @@ const Login = () => {
             </ul>
             <p className="text-center">© 2021 iNDie Connect, Inc</p>
           </div>
-        </footer>
+        </footer> */}
       </main>
     </>
 

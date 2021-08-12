@@ -19,7 +19,7 @@ const HomePage = () => {
 
           <div className="home-jumbotron col-12 d-flex justify-content-around mt-5 mb-5">
             <div className="text-container">
-              <h1 className="home-jumbo display-3">iNDie Connect</h1>
+              <h1 className="home-jumbo display-3" id="home-logo">iNDie Connect</h1>
               <p className="home-lead">
                 At iNDie Connect we help YOU create long lasting connections
                 with like-minded individuals.<br></br>iNDie is the kinship site
@@ -113,13 +113,13 @@ const HomePage = () => {
 
         <footer className="footer">
           <div className="container">
-            <ul className="nav home-footer-nav justify-content-center  pb-3 mb-3">
+            {/* <ul className="nav home-footer-nav justify-content-center  pb-3 mb-3">
             {footer.map((footer, index) => (
               <PageFooter footer={footer} key={index} />
             ))}
             </ul>
             <hr />
-            <p className="text-center">© 2021 iNDie Connect, Inc</p>
+            <p className="text-center">© 2021 iNDie Connect, Inc</p> */}
           </div>
         </footer>
       </div>

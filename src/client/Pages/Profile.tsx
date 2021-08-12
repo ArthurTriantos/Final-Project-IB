@@ -81,7 +81,7 @@ const Profile = () => {
 
               {/* page footer */}
 
-              <div className="container">
+              {/* <div className="container">
                 <footer className="py-3 my-4">
                   <ul className="nav footer-nav justify-content-center pb-3 mb-3">
                     {footer.map((footer, index) => (
@@ -90,7 +90,7 @@ const Profile = () => {
                   </ul>
                   <p className="text-center">© 2021 iNDie Connect, Inc</p>
                 </footer>
-              </div>
+              </div> */}
             </form>
           </div>
         </div>

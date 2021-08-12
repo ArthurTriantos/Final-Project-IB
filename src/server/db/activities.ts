@@ -1,7 +1,8 @@
 import { Query } from "./index";
 
 const all = async () => await Query(`
-    select * from activities;
+    SELECT * from activities
+    ORDER BY id asc
 `, []);
 
 export default {

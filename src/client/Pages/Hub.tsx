@@ -29,11 +29,15 @@ const Hub: React.FC<IHub> = () => {
     <div>
       <Navbar></Navbar>
 
+      <div className="container mt-3">
+        <h1 className="display-4 text-center jumbo-header">Connect</h1>
+      </div>
+
       <div id="main-area" className="row d-flex justify-content-center">
         {profiles.map((profile) => (
           <ProfileCard profile={profile} key={`profile-${profile.id}`} />
         ))}
-        <div className="container">
+        {/* <div className="container">
           <footer className="py-3 my-4">
             <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
               {footer.map((footer, index) => (
@@ -42,25 +46,25 @@ const Hub: React.FC<IHub> = () => {
             </ul>
             <p className="text-center">© 2021 iNDie Connect, Inc</p>
           </footer>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-interface IHub {}
+interface IHub { }
 
 export interface ProfileState {
-    id: string, 
-    firstname: string,
-    image: string, 
-    spectrum: string,
-    relationship: string,
-    age: string,
-    gender: string,
-    orientation: string,
-    city: string,
-    state: string
+  id: string,
+  firstname: string,
+  image: string,
+  spectrum: string,
+  relationship: string,
+  age: string,
+  gender: string,
+  orientation: string,
+  city: string,
+  state: string
 }
 
 export default Hub;

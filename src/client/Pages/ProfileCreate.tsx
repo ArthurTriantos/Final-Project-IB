@@ -121,7 +121,7 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
 
           <div className="edit-jumbotron mb-5 jumbotron-fluid">
             <div className="container">
-              <h1 className="display-4 text-center">Create Profile</h1>
+              <h1 className="display-4 text-center jumbo-header">Create Profile</h1>
               <p className="lead text-center">
                 Please enter your information here. <br></br>
               </p>
@@ -132,8 +132,8 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
 
           <div className="form-container edit-form container">
             {/* picture and picture upload */}
-            <div className="row d-flex justify-content-start mb-2 ml-2">
-              <div className="picture-card mt-1 h-25 w-25 col-4">
+            <div className="row d-flex justify-content-center mb-2 ml-2">
+              <div className="picture-card mb-3 h-25 w-25 col-4">
                 <img
                   className="card-img-top edit-picture "
                   src="https://i.pinimg.com/236x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975--photo-icon-sad.jpg"
@@ -769,7 +769,7 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
                 <span id="submit-span">
                   <button
                     id="submit-button"
-                    className="btn btn-outline-secondary col-md-2 m-2"
+                    className="btn btn-outline-primary btn-lg m-3"
                     onClick={submit}
                   >
                     Submit
@@ -778,7 +778,7 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
               </div>
             </form>
           </div>
-          <footer className="footer mt-5">
+          {/* <footer className="footer mt-5">
             <div className="container">
               <ul className="nav footer-nav justify-content-center align-items-center  pb-3 mb-3">
                 {footer.map((footer, index) => (
@@ -787,7 +787,7 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
               </ul>
               <p className="text-center">© 2021 iNDie Connect, Inc</p>
             </div>
-          </footer>
+          </footer> */}
         </div>
         {/* page footer */}
       </main>

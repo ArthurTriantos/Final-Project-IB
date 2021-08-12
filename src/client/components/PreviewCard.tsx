@@ -19,11 +19,11 @@ const Profile = ({ profile, hobbies }: { profile: any, hobbies: any }) => {
         <>
             <div className="profile col-md-10">
                 <div className="row d-flex justify-content-center align-items-center">
-                    <div id="pic-container" className="col-4">
+                    <div id="pic-container" className="col-6 d-flex justify-content-center align-items-center">
                         <img src={`${profile.image}`}
-                            alt="avatar" width="225rem" height="225rem" />
+                            alt="avatar" width="450rem" height="450rem" />
                     </div>
-                    <div id="profilecard-content" className="col-8">
+                    <div id="profilecard-content" className="col-6">
                     <h1 className="activity-header">{profile.firstname}</h1>
                         <hr></hr>
                         <h2 className="activity-header">{profile.bio}</h2>
@@ -43,7 +43,7 @@ const Profile = ({ profile, hobbies }: { profile: any, hobbies: any }) => {
                         </div>
                     </div>
                     <div id="hobbies-title row"><h2>Hobbies</h2></div>
-                    <div className="hobbies-container container d-flex justify-content-center flex-wrap">
+                    <div className="hobbies-container container d-flex justify-content-start flex-wrap m-2">
                         <h6 className="col-2">Sports: {array[0]}</h6>
                         <h6 className="col-2">Foodie: {array[1]}</h6>
                         <h6 className="col-2">Running: {array[2]}</h6>

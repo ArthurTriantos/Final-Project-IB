@@ -144,7 +144,7 @@ INSERT INTO comments (username, commentText) VALUES
 ("Tanner", "Who ever made this website must be cool."),
 ("Katie", "I agree with you Tanner."),
 ("Tanner", "TY Katie."),
-("Brian", "Hey Judges! Pick us to win."),
-("Joe", "What Brian just said."),
-("Joe", "Chat Chat Chat."),
-("Jane", "LOL Joe.");
+("Brian", "Does anyone want to meet up at the zoo on Friday?"),
+("Joe", "Ooo that sounds like tons of fun."),
+("Joe", "Count me in."),
+("Jane", "I'd love to go to the zoo!");

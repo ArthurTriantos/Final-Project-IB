@@ -5,35 +5,39 @@ import ActivityCard from '../components/ActivityCard'
 import PageFooter from '../components/PageFooter';
 
 const Hub: React.FC<IActivity> = () => {
-    const [activities, setActivities] = useState<ActivityState[]>([]);
-    
-    const getActivities = async () => {
-        let r = await fetch('/api/activities');
-        let activities = await r.json();
-        setActivities(activities);
-    }
+  const [activities, setActivities] = useState<ActivityState[]>([]);
 
-    const [footer, setPageFooter] = useState([
-        "Home",
-        "Features",
-        "Prices",
-        "FAQs",
-        "About",
-      ]);
-    
-    useEffect(() => {getActivities();}, [])
-    
-    return (
-        <div>
-            <Navbar></Navbar>
+  const getActivities = async () => {
+    let r = await fetch('/api/activities');
+    let activities = await r.json();
+    setActivities(activities);
+  }
 
-            <div id="main-area" className="row d-flex justify-content-center">
-                <div id="timeline" className="col-md-8">
-                    {activities.map(activity => <ActivityCard activity={activity} key={`activity-${activity.id}`} />)}
-                </div>
-            </div>
+  const [footer, setPageFooter] = useState([
+    "Home",
+    "Features",
+    "Prices",
+    "FAQs",
+    "About",
+  ]);
 
-            <div className="container">
+  useEffect(() => { getActivities(); }, [])
+
+  return (
+    <div>
+      <Navbar></Navbar>
+
+      <div className="container mt-3">
+        <h1 className="display-4 text-center jumbo-header">Activities/Restaurants</h1>
+      </div>
+
+      <div id="main-area" className="row d-flex justify-content-center">
+        <div id="activities-timeline" className="col-md-8">
+          {activities.map(activity => <ActivityCard activity={activity} key={`activity-${activity.id}`} />)}
+        </div>
+      </div>
+
+      {/* <div className="container">
           <footer className="py-3 my-4">
             <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
               {footer.map((footer, index) => (
@@ -42,24 +46,24 @@ const Hub: React.FC<IActivity> = () => {
             </ul>
             <p className="text-center">© 2021 iNDie Connect, Inc</p>
           </footer>
-        </div>
+        </div> */}
 
-        </div>
-    );
+    </div>
+  );
 };
 
-interface IActivity {}
+interface IActivity { }
 
 export interface ActivityState {
-    id: string, 
-    name: string, 
-    about: string,
-    address: string,
-    link: string,
-    picture: string,
-    hours: string,
-    cost: string,
-    _created: string
+  id: string,
+  name: string,
+  about: string,
+  address: string,
+  link: string,
+  picture: string,
+  hours: string,
+  cost: string,
+  _created: string
 }
 
 export default Hub;

@@ -1,8 +1,18 @@
 $theme-colors: (
-  "primary": #0091ea //Covalence Blue!  :D,,,,,,
+  "primary": black
 );
 
 // Universal
+
+body {
+  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+}
+
+#logo {
+  font-weight: bolder;
+  color: black;
+  text-shadow: #dbc8c2 2px 2px;
+}
 
 .footer {
   position: absolute;
@@ -22,9 +32,17 @@ $theme-colors: (
 
 // Home Page
 
+#home-logo {
+  font-weight: bolder;
+  color: black;
+  text-shadow: #dbc8c2 2px 2px;
+  border-bottom: 2px solid black;
+}
+
 .info-card-container {
   height: auto;
-  align-items: stretch
+  align-items: stretch;
+  margin-bottom: 3em;
 }
 
 .info-card-body {
@@ -33,16 +51,16 @@ $theme-colors: (
 }
 
 .main-home-container {
-  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
   height: 100vh;
 }
 
 .btn-lg,
+.btn-md,
 .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.75rem !important;
   line-height: 1.5;
-  border-radius: 2rem !important;
+  border-radius: 0% !important;
   border: 1px solid !important;
   font-weight: bold !important;
 }
@@ -81,7 +99,6 @@ $theme-colors: (
 }
 
 .picture-card {
-  border: solid 1px;
   height: auto;
   width: 400px;
   height: 400px;
@@ -145,11 +162,11 @@ $theme-colors: (
 
 // login page
 
-.main-login-container {
-  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
-  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-  // background-size: cover;
-}
+// .main-login-container {
+//   background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+//   // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+//   // background-size: cover;
+// }
 
 .login-card {
   width: 80%;
@@ -169,13 +186,19 @@ main {
   height: 100%;
 }
 
+// #login-button {
+//   background-color: rgba(128, 128, 128, 0.274);
+//   border: 1px solid;
+//   border-radius: 0%;
+// }
+
 // sign up page
 
-.main-signup-container {
-  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
-  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-  // background-size: cover;
-}
+// .main-signup-container {
+//   background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+//   // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
+//   // background-size: cover;
+// }
 
 .signup-card {
   width: 80%;
@@ -195,17 +218,23 @@ main {
   height: 100%;
 }
 
+// #signup-button {
+//   background-color: rgba(128, 128, 128, 0.274);
+//   border: 1px solid;
+//   border-radius: 0%;
+// }
+
 // #inputGroupFile02 {
 //   width: 75% !important;
 // }
 
-.profile-upload {
-  // width: 40%
-}
+// .profile-upload {
+//   // width: 40%
+// }
 
-.custom-file-label {
-  // width: 30%
-}
+// .custom-file-label {
+//   // width: 30%
+// }
 
 // chat page
 
@@ -236,47 +265,51 @@ main {
 // Navbar
 
 .nav-title {
-  color: black !important;
+  color: black;
 }
 
-.nav-title-container {
-  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
-  // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
-  // background-size: cover;
-}
+// .nav-title-container {
+//   // background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+//   // background-image: linear-gradient(to right, #fce0d9, #c69b91 );
+//   // background-color: #fbebde;
+//   // background-size: cover;
+//   // border-bottom: black 3px solid;
+// }
+
 // #header-container {
-//   background-color: #479639e5;
-//   border-bottom: 5px #ccc923 solid;
+//   background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
 // }
 
 #header-title {
+  font-weight: bolder;
+  text-shadow: #dbc8c2 2px 2px;
   text-align: left;
-  color: white;
-  font-size: 3em;
+  color: black;
+  font-size: 4rem;
   margin: 0;
   padding: 0 0.75em;
 }
 
 #hub-button {
-  background-color: rgba(128, 128, 128, 0.274);
+  // background-color: #fbebde;
   border: 1px solid;
   border-radius: 0%;
 }
 
 #edit-button {
-  background-color: rgba(128, 128, 128, 0.274);
+  // background-color: rgba(128, 128, 128, 0.274);
   border: 1px solid;
   border-radius: 0%;
 }
 
 #activities-button {
-  background-color: rgba(128, 128, 128, 0.274);
+  // background-color: rgba(128, 128, 128, 0.274);
   border: 1px solid;
   border-radius: 0%;
 }
 
 #chat-button {
-  background-color: rgba(128, 128, 128, 0.274);
+  // background-color: rgba(128, 128, 128, 0.274);
   border: 1px solid;
   border-radius: 0%;
 }
@@ -284,8 +317,8 @@ main {
 // Hub Page Main Area
 
 #main-area {
-  padding-top: 5em;
-  background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
+  padding-top: 3em;
+  // background-image: url("https://www.wallpaperboulevard.com/Images/product/tiverton-blush-pink-faux-grasscloth-wal-tbzl-l.jpg");
   // background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-light-goo-700x453.jpg");
   // background-size: cover;
   // background: #4da6a6;
@@ -307,7 +340,7 @@ main {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktvubRljkhpPeIlso5ZbgpVxRk0d7FGBRLgrzXgdAb-4oJXq2DmTV7cptICKwwC7X6jY&usqp=CAU");
   // background-color: white;
   background-size: cover;
-  border: 1px solid #030500;
+  border: 5px solid #030500;
   margin: 2em 2em;
   padding: 1em;
   // background-color: white;
@@ -316,7 +349,7 @@ main {
 
 #profile-button {
   // background-color: white;
-  border: 1px solid #030500;
+  border: 3px solid #030500;
   margin-top: 1em;
   border-radius: 0%;
 }
@@ -332,7 +365,7 @@ main {
 #activity-link {
   // background-color: #4da6a6;
   // color: white;
-  border: 1px solid #030500;
+  border: 3px solid #030500;
   margin-top: 1em;
   border-radius: 0%;
 }
@@ -346,15 +379,15 @@ main {
 #chirp-form {
   display: flex;
   flex-direction: column;
-  border: 5px black solid;
   margin-top: 1em;
   padding: 1em;
   background-color: white;
+  border: 5px solid black;
 }
 
 #form-title {
   text-align: center;
-  color: #3b93da;
+  color: black;
 }
 
 #username-input {
@@ -366,15 +399,23 @@ main {
 }
 
 #chirp-button {
-  background-color: #3b93da;
-  color: white;
+  background-color: #8d9d80;
+  color: black;
+  border: 3px solid black;
+}
+
+#activity-timeline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1em 0 0;
 }
 
 #timeline {
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
-  margin: 1em 0 0;
+  margin: 4em 0 0;
 }
 
 .chirp {
@@ -382,7 +423,7 @@ main {
   margin: 0 2em 1em;
   margin-top: 0;
   padding: 1em;
-  background-color: white;
+  background-color: #8d9d80;
 }
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
