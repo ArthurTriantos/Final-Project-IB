@@ -9,7 +9,6 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
-    "Prices",
     "FAQs",
     "About",
   ]);
@@ -121,7 +120,7 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
 
           <div className="edit-jumbotron mb-5 jumbotron-fluid">
             <div className="container">
-              <h1 className="display-4 text-center">Create Profile</h1>
+              <h1 className="display-4 text-centern jumbo-header">Create Profile</h1>
               <p className="lead text-center">
                 Please enter your information here. <br></br>
               </p>
@@ -133,7 +132,7 @@ const ProfileCreate: React.FC<IProfileCreate> = () => {
           <div className="form-container edit-form container">
             {/* picture and picture upload */}
             <div className="row d-flex justify-content-start mb-2 ml-2">
-              <div className="picture-card mt-1 h-25 w-25 col-4">
+              <div className="picture-card mt-1 h-25 w-25 col-4 mb-4">
                 <img
                   className="card-img-top edit-picture "
                   src="https://i.pinimg.com/236x/fc/7e/ce/fc7ece8e8ee1f5db97577a4622f33975--photo-icon-sad.jpg"

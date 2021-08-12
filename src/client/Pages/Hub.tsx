@@ -16,7 +16,6 @@ const Hub: React.FC<IHub> = () => {
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
-    "Prices",
     "FAQs",
     "About",
   ]);
@@ -26,13 +25,19 @@ const Hub: React.FC<IHub> = () => {
   }, []);
 
   return (
-    <div>
-      <Navbar></Navbar>
-
-      <div id="main-area" className="row d-flex justify-content-center">
-        {profiles.map((profile) => (
-          <ProfileCard profile={profile} key={`profile-${profile.id}`} />
-        ))}
+    <>
+      <div>
+        <Navbar></Navbar>
+        <div className="edit-jumbotron row mb-5 mt-5 jumbotron-fluid">
+          <div className="container">
+            <h1 className="display-4 text-center jumbo-header">Connect</h1>
+          </div>
+        </div>
+        <div id="main-area" className="row d-flex justify-content-center">
+          {profiles.map((profile) => (
+            <ProfileCard profile={profile} key={`profile-${profile.id}`} />
+          ))}
+        </div>
         <div className="container">
           <footer className="py-3 my-4">
             <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
@@ -44,23 +49,23 @@ const Hub: React.FC<IHub> = () => {
           </footer>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
 interface IHub {}
 
 export interface ProfileState {
-    id: string, 
-    firstname: string,
-    image: string, 
-    spectrum: string,
-    relationship: string,
-    age: string,
-    gender: string,
-    orientation: string,
-    city: string,
-    state: string
+  id: string;
+  firstname: string;
+  image: string;
+  spectrum: string;
+  relationship: string;
+  age: string;
+  gender: string;
+  orientation: string;
+  city: string;
+  state: string;
 }
 
 export default Hub;

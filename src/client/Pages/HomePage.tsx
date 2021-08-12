@@ -6,7 +6,6 @@ const HomePage = () => {
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
-    "Prices",
     "FAQs",
     "About",
   ]);
@@ -19,8 +18,8 @@ const HomePage = () => {
 
           <div className="home-jumbotron col-12 d-flex justify-content-around mt-5 mb-5">
             <div className="text-container">
-              <h1 className="home-jumbo display-3">iNDie Connect</h1>
-              <p className="home-lead">
+              <h1 className="home-jumbo display-3 jumbo-header">iNDie Connect</h1>
+              <p className="home-lead mt-3">
                 At iNDie Connect we help YOU create long lasting connections
                 with like-minded individuals.<br></br>iNDie is the kinship site
                 for independent Neurodiverse people.

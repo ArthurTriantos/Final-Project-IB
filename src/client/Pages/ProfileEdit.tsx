@@ -34,7 +34,6 @@ const ProfileEdit = () => {
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
-    "Prices",
     "FAQs",
     "About",
   ]);

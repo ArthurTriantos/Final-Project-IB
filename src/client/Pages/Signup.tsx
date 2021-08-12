@@ -5,7 +5,6 @@ const Singup = () => {
   const [footer, setPageFooter] = useState([
     "Home",
     "Features",
-    "Prices",
     "FAQs",
     "About",
   ]);
@@ -31,7 +30,7 @@ const Singup = () => {
 
         {/* card */}
 
-        <div className="signup-card-container container card my-5">
+        <div className="signup-card-container container card border shadow-lg my-5">
           <div className="row no-gutters">
             <div className="col-md-6">
               <img
@@ -65,10 +64,7 @@ const Singup = () => {
                         aria-describedby="emailHelp"
                         placeholder="Enter email"
                       />
-                      <small
-                        id="emailHelp"
-                        className="form-text text-muted"
-                      >
+                      <small id="emailHelp" className="form-text text-muted">
                         We'll never share your email with anyone else.
                       </small>
                     </div>
@@ -80,7 +76,9 @@ const Singup = () => {
                         id="exampleInputPassword1"
                         placeholder="Password"
                       />
-                      <label htmlFor="exampleInputPassword1">Confirm Password</label>
+                      <label htmlFor="exampleInputPassword1">
+                        Confirm Password
+                      </label>
                       <input
                         type="password"
                         className="form-control text-center"
@@ -100,16 +98,16 @@ const Singup = () => {
             </div>
           </div>
         </div>
-          <footer className="footer">
-        <div className="container">
-            <ul className="nav footer-nav justify-content-center  pb-3 mb-3">
+        <footer className="footer">
+          <div className="container">
+            <ul className="nav footer-nav pb-3 mb-3">
               {footer.map((footer, index) => (
                 <PageFooter footer={footer} key={index} />
               ))}
             </ul>
-            <p className="text-center">© 2021 iNDie Connect, Inc</p>
+            <p className="indie-logo">© 2021 iNDie Connect, Inc</p>
           </div>
-          </footer>
+        </footer>
       </main>
     </>
 
